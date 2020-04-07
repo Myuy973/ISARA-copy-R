@@ -7,11 +7,11 @@
         @content;
     }
 }
-// @mixin  pc-small {
-//     @media (max-width: 1199px) {
-//         @content;
-//     }
-// }
+@mixin  pc-small {
+    @media (max-width: 1190px) {
+        @content;
+    }
+}
 // @mixin  tabled{
 //     @media (max-width: 1199px) {
 //         @content;
@@ -69,6 +69,9 @@ header {
                 margin: 0;
                 font-size: 86%;
                 letter-spacing: 0.12em;
+                @include pc-small() {
+                    font-size: 66.5%;
+                }
            }
         }
     
@@ -86,6 +89,15 @@ header {
             p {
                 letter-spacing: 0.1em;
                 margin: 0;
+            }
+            @include pc-small() {
+                width: 258px;
+                height: 40px;
+                line-height: 37px;
+                p {
+                    font-size: 76.5%;
+                    font-weight: normal;
+                }
             }
         }
     }
@@ -111,6 +123,25 @@ header {
             margin: 0;
             font-size: 133%;
             line-height: 22px;
+        }
+
+        @include pc-small() {
+            background: url(../img/main.jpg) 
+                        no-repeat 57% 100%/auto 87%;
+            padding-top: 170px;
+            h2 {
+                font-size: 148%;
+                line-height: 49px;
+                letter-spacing: .07em;
+            }
+            img {
+                margin: 4px 0 32px 0;
+            }
+            p {
+                line-height: 17px;
+                font-size: 100%;
+                letter-spacing: .084em;
+            }
         }
     }
 
@@ -165,6 +196,47 @@ header {
                 } 
             }
         }
+
+        @include pc-small() {
+            padding-top: 28px;
+            height: 456px;
+            > div {
+                max-width: 86.5%;
+                h2 {
+                    font-size: 105%;
+                    margin-bottom: 10px;
+                }
+                > span {
+                    width: 440px;
+                    height: 21px;
+                    p {
+                        line-height: 23px;
+                        font-size: 82%;
+                        letter-spacing: .26em;
+                        font-weight: normal;
+                    }
+                }
+                #top-page-bottom-bt {
+                    height: 78px;
+                    line-height: 78px;
+                    margin: 10px 0 30px 0;
+                    p {
+                        font-size: 110%;
+                        letter-spacing: .095em;
+                    }
+                }
+                > p {
+                    font-size: 111%;
+                    letter-spacing: 0;
+                    &:not(:last-of-type) {
+                        margin-bottom: 29.5px;
+                    }
+                }
+                div.sns {
+                    margin-top: 24px;
+                }
+            }
+        }
     }
 
     #top-question {
@@ -209,6 +281,31 @@ header {
                             background: $orange;
                             z-index: 2;
                         }
+                    }
+                }
+            }
+        }
+
+        @include pc-small() {
+            background-size: auto 100%;
+            > div {
+                h1 {
+                    font-size: 150%;
+                    letter-spacing: .05em;
+                    margin-bottom: 37px;
+                }
+                p {
+                    font-size: 102.3%;
+                    line-height: 25px;
+                    &:nth-of-type(2) {
+                        margin-bottom: 25px;
+                    }
+                    &:nth-of-type(5) {
+                        margin-bottom: 24.5px;
+                    }
+                    &:last-of-type span span:last-of-type {
+                        top: 17px;
+                        height: 8px;
                     }
                 }
             }
@@ -326,6 +423,30 @@ header {
                 }
             }
         }
+
+        @include pc-small() {
+            height: 622px;
+            > div {
+                h1 {
+                    font-size: 146%;
+                    padding: 35.5px 0;
+                    letter-spacing: .08em;
+                    margin-bottom: 37px;
+                }
+                > p {
+                    font-size: 104%;
+                    font-weight: normal;
+                }
+                > div {
+                    border: 2px solid $orange;
+                    height: 243px;
+                    > p {
+                        font-size: 98%;
+                        margin: 30px 0 23px 0;
+                    }
+                }
+            }
+        }
     }
 
     #isara-info_2 {
@@ -403,6 +524,55 @@ header {
                 }
             }
         }   
+
+        @include pc-small() {
+            padding-top: 55px;
+            height: auto;
+            padding-bottom: 59px;
+            > div {
+                h1 {
+                    font-size: 155%;
+                }
+                > p {
+                    margin: 11px 0 24px 0;
+                    font-size: 105%;
+                    line-height: 35px;
+                    letter-spacing: .03em;
+                }
+                > div {
+                    height: auto;
+                    width: 37.5%;
+                    transform: translateX(0);
+                    > div {
+                        display: block;
+                        width: 100%;
+                        padding-top: 20px;
+                        padding-bottom: 30px;
+                        &:not(:last-of-type) {
+                            margin: 0 0 20px 0;
+                        }
+                        h2 {
+                            height: 21px;
+                            font-size: 87%;
+                        }
+                        p:first-of-type {
+                            font-size: 70%;
+                            letter-spacing: .05em;
+                        }
+                        p:last-of-type {
+                            font-size: 85%;
+                            letter-spacing: .13em;
+                        }
+                    }
+                    > div:nth-of-type(2) {
+                        padding-bottom: 29px;
+                        p:last-of-type {
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     #isara-info_2-bottom {
@@ -417,6 +587,14 @@ header {
             letter-spacing: .1em;
             span {
                 color: $orange;
+            }
+        }
+
+        @include pc-small() {
+            padding: 39px 0 40px 0;
+            p {
+                font-size: 98%;
+                line-height: 25px;
             }
         }
     }
@@ -477,6 +655,24 @@ header {
                 font-size: 100%;
                 margin-top: 39px;
                 letter-spacing: .08em;
+            }
+        }
+
+        @include pc-small() {
+            height: 529px;
+            padding-top: 46px;
+            > div {
+                h1 {
+                    font-size: 145%;
+                }
+                p:first-of-type {
+                    font-size: 98%;
+                    margin: 41px 0 60px 0;
+                }
+                p:last-of-type {
+                    font-size: 89%;
+                    margin: 58px;
+                }
             }
         }
     }
@@ -582,6 +778,66 @@ header {
                 font-weight: normal;
             }
         }
+
+        @include pc-small() {
+            height: 970px;
+            padding-top: 30px;
+            > div {
+                h1 {
+                    p {
+                        font-size: 80%;
+                        letter-spacing: .076em;
+                        &:first-of-type {
+                            font-size: 53%;
+                            letter-spacing: .12em;
+                        }
+                    }
+                }
+                #info_4-imgs {
+                    max-width: 1013px;
+                    div:not(:last-of-type) {
+                        margin-right: 60px;
+                    }
+                    h2 {
+                        text-align: center;
+                        font-size: 100%;
+                        letter-spacing: .079em;
+                    }
+                    p {
+                        font-size: 87%;
+                        margin-top: 7px;
+                        line-height: 22px;
+                        padding: 0 8px 0 3px;
+                    }
+                }
+                #info_4-sap {
+                    max-width: 1035px;
+                    height: 240px;
+                    margin-top: 66px;
+                    h2 {
+                        font-size: 145%;
+                        margin: 40px 0 12px 0;
+                        letter-spacing: .08em;
+                    }
+                    p:first-of-type {
+                        font-size: 100%;
+                        letter-spacing: .08em;
+                        margin-bottom: 12px;
+                    }
+                    p:last-of-type {
+                        font-size: 88%;
+                        letter-spacing: .086em;
+                        line-height: 21.9px;
+                    }
+                }
+                > p {
+                    font-size: 70%;
+                    letter-spacing: .056em;
+                    line-height: 19px;
+                    margin-top: 38px;
+                }
+            }
+        }
     }
 
     #menber {
@@ -650,6 +906,67 @@ header {
                 }
             }
         }
+
+        @include pc-small() {
+            height: 1276px;
+            padding-top: 77px;
+            h1 {
+                font-size: 157%;
+            }
+            > p {
+                font-size: 95.4%;
+                margin-top: 31px;
+            }
+            table {
+                border-spacing:0px;
+                tr {
+                    td {
+                        .menber-text {
+                            margin-top: 100px;
+                            height: 331px;
+                            h2 {
+                                font-size: 89%;
+                                margin-bottom: 11px;
+                            }
+                            h3 {
+                                font-size: 88%;
+                            }
+                            p {
+                                font-size: 89%;
+                                letter-spacing: .08em;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+                }
+                tr:last-of-type {
+                    td {
+                        padding-top: 50px;
+                        .menber-img {
+                            top: -30px;
+                        }
+                        .menber-text {
+                            height: 307px;
+                            margin-top: 0px;
+                            margin-bottom: 36px;
+                            h3 {
+                                margin-bottom: 9.6px;
+                            }
+                        }
+
+                    }
+                    td:first-of-type {
+                        .menber-text {
+                            padding-top: 38px;
+                            h3 { margin-bottom: 31.8px;}
+                        }
+                    }
+                    td:last-of-type {
+                        .menber-text { padding-top: 39px;}
+                    }
+                }
+            }
+        }
     }
 
     #quesition-top {
@@ -688,6 +1005,16 @@ header {
             font-size: 181%;
             &:before, &::after {
                 border-color: white;
+            }
+        }
+
+        @include pc-small() {
+            #q-icon {
+                font-size: 130%;
+                letter-spacing: .06em;
+            }
+            h1 {
+                font-size: 120%;
             }
         }
     }
@@ -736,6 +1063,52 @@ header {
                         background-image: url(../img/asada.jpg);
                     }
                 }
+            }
+        }
+
+        @include pc-small() {
+            height: 1063px;
+            > div {
+                padding: 0;
+                h1 {
+                    font-size: 146%;
+                    margin-bottom: 12px;
+                    letter-spacing: .08em;
+                }
+                h2 {
+                    font-size: 87.5%;
+                    margin-bottom: 28px;
+               }
+               small {
+                   font-size: 74%;
+               }
+               > div {
+                   max-width: none;
+                   width: 90%;
+                   margin-left: 0;
+                   margin-top: 29px;
+                   > div {
+                       .answer-img {
+                            padding-bottom: calc(23%);
+                       }
+                       .answer-text {
+                           flex: 3.3;
+                           p {
+                               display: inline-block;
+                               margin: 0 270px 10px 0;
+                               padding-left: 28px;
+                               max-width: 714px;
+                           }
+                           a {
+                               padding-left: 28px;
+                               letter-spacing: .04em;
+                               i {
+                                   letter-spacing: .065em;
+                               }
+                           }
+                       }
+                   }
+               }
             }
         }
     }
@@ -796,6 +1169,47 @@ header {
                 }
             }
         }
+
+        @include pc-small() {
+            padding-top: 60px;
+            height: 765px;
+            > div {
+                h1 {
+                    font-size: 153%;
+                    margin-bottom: 11.5px;
+                    letter-spacing: .03em;
+                }
+                h2 {
+                    font-size: 90%;
+                    letter-spacing: .06em;
+                    margin-bottom: 53px;
+                }
+                #study-group {
+                    max-width: 535px;
+                    #study-a {
+                        dd:first-of-type {
+                            height: 53px;
+                        }
+                    }
+                    dt {
+                        font-size: 107%;
+                        height: 55px;
+                        line-height: 56px;
+                    }
+                    dd {
+                        padding: 10px 15px 0 15px;
+                        height: 42.3px;
+                        line-height: normal;
+                        font-size: 87%;
+                        &:first-of-type {
+                            height: 75px;
+                            line-height: 23px;
+                            padding-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     #study-bottom {
@@ -808,6 +1222,12 @@ header {
             font-size: 130%;
             margin: 0;
             letter-spacing: .026em;
+        }
+        @include pc-small() {
+            height: 129px;
+            h1 {
+                font-size: 106%;
+            }
         }
     }
 
@@ -883,6 +1303,7 @@ header {
                     .schedule-text {
                         padding: 41px 38px 0 31px;
                         small {
+                            color: #787878;
                             letter-spacing: .065em;
                             font-size: 90%
                         }
@@ -911,6 +1332,86 @@ header {
                     &:nth-of-type(even) {
                         background: url(../img/flowline2.png)
                                     no-repeat center center/100% auto;
+                    }
+                }
+            }
+        }
+
+        @include pc-small() {
+            padding-top: 42px;
+            height: 1765px;
+            > div {
+                h1 {
+                    font-size: 147%;
+                    margin-bottom: 37px;
+                }
+                > div {
+                    max-width: 1055px;
+                    margin-top: 26px;
+                    .schedule-text {
+                        h2, h3 {
+                            letter-spacing: .0615em;
+                            font-size: 90%;
+                        }
+                        p {
+                            font-size: 72%;
+                            letter-spacing: .025em;
+                            line-height: 18px;
+                        }
+                    }
+                    #schedule-info1 .schedule-text p {
+                        font-size: 72%;
+                        letter-spacing: .025em;
+                        line-height: 18px;
+                    }
+                    #schedule-info2 {
+                        height: 235px;
+                        .schedule-text p {
+                            font-size: 72%;
+                            letter-spacing: .025em;
+                            line-height: 18px;
+                            margin-bottom: 19.5px;
+                        }
+                    }
+                    #schedule-info3 {
+                        height: 200px;
+                        .schedule-text {
+                           padding-top: 40px;
+                           h3 {
+                               letter-spacing: .065em;
+                           }
+                       }
+                    }
+                    #schedule-info4{
+                        .schedule-text {
+                            padding-top: 40px;
+                            h3 {
+                                margin-bottom: 16px;
+                            }
+                            small {
+                                font-size: 69.5%;
+                                font-weight: normal;
+                            }
+                        }
+                    }
+                    #schedule-info5{
+                        height: 224px;
+                        .schedule-img {
+                            h2 {
+                                margin-top: 11px;
+                            }
+                        }
+                        .schedule-text{
+                            padding-top: 29px;
+                            h2 {
+                                line-height: 41.6px;
+                                letter-spacing: .063em;
+                            }
+                        }
+                    }
+                    > span {
+                        height: 67px;
+                        max-width: 800px;
                     }
                 }
             }
@@ -965,6 +1466,40 @@ header {
                 margin: 22px 0 0 0;
             }
         }
+
+        @include pc-small() {
+            height: 385px;
+            background-size: auto 119.3%;
+            > div {
+                padding: 61px 0 0 58px;
+                h1 {
+                    font-size: 146%;
+                    letter-spacing: .145em;
+                }
+                p {
+                    margin: 22px 0 21px 1px;
+                    font-size: 75%;
+                    letter-spacing: -.012em;
+                    line-height: 18.4px;
+                }
+                ul li {
+                    margin-bottom: 10.3px;
+                    font-size: 90%;
+                    letter-spacing: .062em;
+                    &::before {
+                        height: 3.5px;
+                        width: 3.5px;
+                        top: 8px;
+                        left: 6px;
+                    }
+                }
+                h2 {
+                    font-size: 96%;
+                    letter-spacing: .128em;
+                    margin-top: 21px;
+                }
+            }
+        }
     }
 
     #benefit {
@@ -1008,14 +1543,17 @@ header {
                 }
 
                 h1 {
+                    display: inline-block;
                     position: absolute;
                     top: -72px;
                     left: 50%;
-                    font-size: 175%;
+                    font-size: 170%;
+                    letter-spacing: .07em;
                     z-index: 3;
                     line-height: 45px;
                     background: #F7C23C;
                     transform: translateX(-50%);
+                    width: 50%;
                 }
 
                 > div {
@@ -1043,6 +1581,36 @@ header {
                 }
                 #benefit-3 {
                     padding-top: 63px;
+                }
+            }
+        }
+
+        @include pc-small() {
+            padding-top: 61px;
+            height: 679px;
+            > div {
+                h1 {
+                    font-size: 145%;
+                    letter-spacing: .083em;
+                    i {
+                        font-size: 85%;
+                        margin-right: 0;
+                    }
+                }
+                > p {
+                    font-size: 88.6%;
+                    margin: 42px 0 125px 0;
+                    letter-spacing: .078em;
+                }
+                > div {
+                    max-width: 1093px;
+                    h1 {
+                        top: -40.6px;
+                        font-size: 150%;
+                        line-height: 37px;
+                        letter-spacing: .05em;
+                        width: 36%;
+                    }
                 }
             }
         }
@@ -1075,6 +1643,27 @@ header {
 
                 &::before, &::after {
                     border-color: white;
+                }
+            }
+        }
+
+        @include pc-small() {
+            padding-top: 59px;
+            height: 473px;
+            background-size: auto 104%;
+            > div {
+                h2 {
+                    font-size: 150%;
+                    letter-spacing: .05em;
+                }
+                p {
+                    font-size: 95%;
+                    line-height: 25.9px;
+                    letter-spacing: .135em;
+                }
+                h1 {
+                    font-size: 158%;
+                    margin-bottom: 18px;
                 }
             }
         }
@@ -1130,6 +1719,37 @@ header {
                         }
 
                    }
+                }
+            }
+        }
+
+        @include pc-small() {
+            height: 625px;
+            padding-top: 60px;
+            > div {
+                h1 {
+                    font-size: 150%;
+                    letter-spacing: .05em;
+                    margin-bottom: 37px;
+                }
+                h2 {
+                    font-size: 100%;
+                    font-weight: normal;
+                    letter-spacing: .075em;
+                    margin-bottom: 59px;
+                }
+                > div {
+                    max-width: 1004px;
+                    #message-text {
+                        flex: 3.52;
+                        p {
+                            margin: 0 0 10px 38px;
+                            &:last-of-type {
+                                margin: 9px 0 0 38px;
+                            }
+                        }
+
+                    }
                 }
             }
         }
@@ -1193,6 +1813,33 @@ header {
                 
             }
         }
+
+        @include pc-small() {
+            padding-top: 60px;
+            height: 691px;
+            > div {
+                h1 {
+                    font-size: 157%;
+                    margin-bottom: 20px;
+                    i {
+                        font-size: 100%;
+                        margin-right: 2px;
+                    }
+                }
+                h2 {
+                    font-size: 90%;
+                    letter-spacing: .065em;
+
+                }
+                form {
+                    max-width: 821px;
+                    textarea {
+                        margin-bottom: 33px;
+                    }
+                }
+                
+            }
+        }
     }
 
     #question {
@@ -1218,6 +1865,7 @@ header {
                     width: 100%;
                     height: 63px;
                     line-height: 41px;
+                    border-radius: 2px;
                     padding: 10px 20px 10px 20px;
                     border: 1px solid $border-color;
                     list-style-type: none;
@@ -1253,6 +1901,35 @@ header {
                 }
             }
         }
+
+        @include pc-small() {
+            padding-top: 60px;
+            height: 1153px;
+            h1 {
+                font-size: 155%;
+                margin-bottom: 41px;
+                i {
+                    font-size: 90%;
+                    vertical-align: 0;
+                    margin-right: 3px;
+                }
+            }
+            > div {
+                ul {
+                    max-width: 1055px;
+                    li {
+                        height: 59px;
+                        &:not(:first-of-type) {
+                            margin-top: 5.1px;
+                        }
+                        p {
+                            font-size: 100.5%;
+                            line-height: 38px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -1282,6 +1959,9 @@ footer {
     }
     .sns {
         margin: 14px auto 30px auto;
+        @include pc-small() {
+            transform: translateX(-2px);
+        }
     }
 }
 

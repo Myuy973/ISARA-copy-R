@@ -248,6 +248,12 @@ header > div #main-header-log p {
   letter-spacing: 0.12em;
 }
 
+@media (max-width: 1190px) {
+  header > div #main-header-log p {
+    font-size: 66.5%;
+  }
+}
+
 header > div #header-bt {
   float: right;
   width: 312px;
@@ -264,6 +270,18 @@ header > div #header-bt {
 header > div #header-bt p {
   letter-spacing: 0.1em;
   margin: 0;
+}
+
+@media (max-width: 1190px) {
+  header > div #header-bt {
+    width: 258px;
+    height: 40px;
+    line-height: 37px;
+  }
+  header > div #header-bt p {
+    font-size: 76.5%;
+    font-weight: normal;
+  }
 }
 
 #main-content #top-page {
@@ -288,6 +306,26 @@ header > div #header-bt p {
   margin: 0;
   font-size: 133%;
   line-height: 22px;
+}
+
+@media (max-width: 1190px) {
+  #main-content #top-page {
+    background: url(../img/main.jpg) no-repeat 57% 100%/auto 87%;
+    padding-top: 170px;
+  }
+  #main-content #top-page h2 {
+    font-size: 148%;
+    line-height: 49px;
+    letter-spacing: .07em;
+  }
+  #main-content #top-page img {
+    margin: 4px 0 32px 0;
+  }
+  #main-content #top-page p {
+    line-height: 17px;
+    font-size: 100%;
+    letter-spacing: .084em;
+  }
 }
 
 #main-content #top-page-bottom {
@@ -349,6 +387,49 @@ header > div #header-bt p {
   margin-bottom: 34px;
 }
 
+@media (max-width: 1190px) {
+  #main-content #top-page-bottom {
+    padding-top: 28px;
+    height: 456px;
+  }
+  #main-content #top-page-bottom > div {
+    max-width: 86.5%;
+  }
+  #main-content #top-page-bottom > div h2 {
+    font-size: 105%;
+    margin-bottom: 10px;
+  }
+  #main-content #top-page-bottom > div > span {
+    width: 440px;
+    height: 21px;
+  }
+  #main-content #top-page-bottom > div > span p {
+    line-height: 23px;
+    font-size: 82%;
+    letter-spacing: .26em;
+    font-weight: normal;
+  }
+  #main-content #top-page-bottom > div #top-page-bottom-bt {
+    height: 78px;
+    line-height: 78px;
+    margin: 10px 0 30px 0;
+  }
+  #main-content #top-page-bottom > div #top-page-bottom-bt p {
+    font-size: 110%;
+    letter-spacing: .095em;
+  }
+  #main-content #top-page-bottom > div > p {
+    font-size: 111%;
+    letter-spacing: 0;
+  }
+  #main-content #top-page-bottom > div > p:not(:last-of-type) {
+    margin-bottom: 29.5px;
+  }
+  #main-content #top-page-bottom > div div.sns {
+    margin-top: 24px;
+  }
+}
+
 #main-content #top-question {
   height: 580px;
   padding-top: 40px;
@@ -395,6 +476,31 @@ header > div #header-bt p {
   height: 9px;
   background: #EBB94D;
   z-index: 2;
+}
+
+@media (max-width: 1190px) {
+  #main-content #top-question {
+    background-size: auto 100%;
+  }
+  #main-content #top-question > div h1 {
+    font-size: 150%;
+    letter-spacing: .05em;
+    margin-bottom: 37px;
+  }
+  #main-content #top-question > div p {
+    font-size: 102.3%;
+    line-height: 25px;
+  }
+  #main-content #top-question > div p:nth-of-type(2) {
+    margin-bottom: 25px;
+  }
+  #main-content #top-question > div p:nth-of-type(5) {
+    margin-bottom: 24.5px;
+  }
+  #main-content #top-question > div p:last-of-type span span:last-of-type {
+    top: 17px;
+    height: 8px;
+  }
 }
 
 #main-content #isara-info_1 {
@@ -526,6 +632,30 @@ header > div #header-bt p {
   font-size: 75%;
 }
 
+@media (max-width: 1190px) {
+  #main-content #isara-info_1 {
+    height: 622px;
+  }
+  #main-content #isara-info_1 > div h1 {
+    font-size: 146%;
+    padding: 35.5px 0;
+    letter-spacing: .08em;
+    margin-bottom: 37px;
+  }
+  #main-content #isara-info_1 > div > p {
+    font-size: 104%;
+    font-weight: normal;
+  }
+  #main-content #isara-info_1 > div > div {
+    border: 2px solid #EBB94D;
+    height: 243px;
+  }
+  #main-content #isara-info_1 > div > div > p {
+    font-size: 98%;
+    margin: 30px 0 23px 0;
+  }
+}
+
 #main-content #isara-info_2 {
   height: 436px;
   background: url(../img/aboutsecondbg.jpg) no-repeat center center/auto 100%;
@@ -606,6 +736,56 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 1190px) {
+  #main-content #isara-info_2 {
+    padding-top: 55px;
+    height: auto;
+    padding-bottom: 59px;
+  }
+  #main-content #isara-info_2 > div h1 {
+    font-size: 155%;
+  }
+  #main-content #isara-info_2 > div > p {
+    margin: 11px 0 24px 0;
+    font-size: 105%;
+    line-height: 35px;
+    letter-spacing: .03em;
+  }
+  #main-content #isara-info_2 > div > div {
+    height: auto;
+    width: 37.5%;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  #main-content #isara-info_2 > div > div > div {
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  #main-content #isara-info_2 > div > div > div:not(:last-of-type) {
+    margin: 0 0 20px 0;
+  }
+  #main-content #isara-info_2 > div > div > div h2 {
+    height: 21px;
+    font-size: 87%;
+  }
+  #main-content #isara-info_2 > div > div > div p:first-of-type {
+    font-size: 70%;
+    letter-spacing: .05em;
+  }
+  #main-content #isara-info_2 > div > div > div p:last-of-type {
+    font-size: 85%;
+    letter-spacing: .13em;
+  }
+  #main-content #isara-info_2 > div > div > div:nth-of-type(2) {
+    padding-bottom: 29px;
+  }
+  #main-content #isara-info_2 > div > div > div:nth-of-type(2) p:last-of-type {
+    width: auto;
+  }
+}
+
 #main-content #isara-info_2-bottom {
   background: #016EA9;
   text-align: center;
@@ -622,6 +802,16 @@ header > div #header-bt p {
 
 #main-content #isara-info_2-bottom p span {
   color: #EBB94D;
+}
+
+@media (max-width: 1190px) {
+  #main-content #isara-info_2-bottom {
+    padding: 39px 0 40px 0;
+  }
+  #main-content #isara-info_2-bottom p {
+    font-size: 98%;
+    line-height: 25px;
+  }
 }
 
 #main-content #isara-info_3 {
@@ -690,6 +880,24 @@ header > div #header-bt p {
   font-size: 100%;
   margin-top: 39px;
   letter-spacing: .08em;
+}
+
+@media (max-width: 1190px) {
+  #main-content #isara-info_3 {
+    height: 529px;
+    padding-top: 46px;
+  }
+  #main-content #isara-info_3 > div h1 {
+    font-size: 145%;
+  }
+  #main-content #isara-info_3 > div p:first-of-type {
+    font-size: 98%;
+    margin: 41px 0 60px 0;
+  }
+  #main-content #isara-info_3 > div p:last-of-type {
+    font-size: 89%;
+    margin: 58px;
+  }
 }
 
 #main-content #isara-info_4 {
@@ -819,6 +1027,64 @@ header > div #header-bt p {
   font-weight: normal;
 }
 
+@media (max-width: 1190px) {
+  #main-content #isara-info_4 {
+    height: 970px;
+    padding-top: 30px;
+  }
+  #main-content #isara-info_4 > div h1 p {
+    font-size: 80%;
+    letter-spacing: .076em;
+  }
+  #main-content #isara-info_4 > div h1 p:first-of-type {
+    font-size: 53%;
+    letter-spacing: .12em;
+  }
+  #main-content #isara-info_4 > div #info_4-imgs {
+    max-width: 1013px;
+  }
+  #main-content #isara-info_4 > div #info_4-imgs div:not(:last-of-type) {
+    margin-right: 60px;
+  }
+  #main-content #isara-info_4 > div #info_4-imgs h2 {
+    text-align: center;
+    font-size: 100%;
+    letter-spacing: .079em;
+  }
+  #main-content #isara-info_4 > div #info_4-imgs p {
+    font-size: 87%;
+    margin-top: 7px;
+    line-height: 22px;
+    padding: 0 8px 0 3px;
+  }
+  #main-content #isara-info_4 > div #info_4-sap {
+    max-width: 1035px;
+    height: 240px;
+    margin-top: 66px;
+  }
+  #main-content #isara-info_4 > div #info_4-sap h2 {
+    font-size: 145%;
+    margin: 40px 0 12px 0;
+    letter-spacing: .08em;
+  }
+  #main-content #isara-info_4 > div #info_4-sap p:first-of-type {
+    font-size: 100%;
+    letter-spacing: .08em;
+    margin-bottom: 12px;
+  }
+  #main-content #isara-info_4 > div #info_4-sap p:last-of-type {
+    font-size: 88%;
+    letter-spacing: .086em;
+    line-height: 21.9px;
+  }
+  #main-content #isara-info_4 > div > p {
+    font-size: 70%;
+    letter-spacing: .056em;
+    line-height: 19px;
+    margin-top: 38px;
+  }
+}
+
 #main-content #menber {
   height: 1370px;
   background: url(../img/teacherbg.jpg) no-repeat center center/auto 100%;
@@ -889,6 +1155,62 @@ header > div #header-bt p {
   background-image: url(../img/manabu.png);
 }
 
+@media (max-width: 1190px) {
+  #main-content #menber {
+    height: 1276px;
+    padding-top: 77px;
+  }
+  #main-content #menber h1 {
+    font-size: 157%;
+  }
+  #main-content #menber > p {
+    font-size: 95.4%;
+    margin-top: 31px;
+  }
+  #main-content #menber table {
+    border-spacing: 0px;
+  }
+  #main-content #menber table tr td .menber-text {
+    margin-top: 100px;
+    height: 331px;
+  }
+  #main-content #menber table tr td .menber-text h2 {
+    font-size: 89%;
+    margin-bottom: 11px;
+  }
+  #main-content #menber table tr td .menber-text h3 {
+    font-size: 88%;
+  }
+  #main-content #menber table tr td .menber-text p {
+    font-size: 89%;
+    letter-spacing: .08em;
+    line-height: 22px;
+  }
+  #main-content #menber table tr:last-of-type td {
+    padding-top: 50px;
+  }
+  #main-content #menber table tr:last-of-type td .menber-img {
+    top: -30px;
+  }
+  #main-content #menber table tr:last-of-type td .menber-text {
+    height: 307px;
+    margin-top: 0px;
+    margin-bottom: 36px;
+  }
+  #main-content #menber table tr:last-of-type td .menber-text h3 {
+    margin-bottom: 9.6px;
+  }
+  #main-content #menber table tr:last-of-type td:first-of-type .menber-text {
+    padding-top: 38px;
+  }
+  #main-content #menber table tr:last-of-type td:first-of-type .menber-text h3 {
+    margin-bottom: 31.8px;
+  }
+  #main-content #menber table tr:last-of-type td:last-of-type .menber-text {
+    padding-top: 39px;
+  }
+}
+
 #main-content #quesition-top {
   background: #EBB94D;
   height: 266px;
@@ -931,6 +1253,16 @@ header > div #header-bt p {
 
 #main-content #quesition-top h1:before, #main-content #quesition-top h1::after {
   border-color: white;
+}
+
+@media (max-width: 1190px) {
+  #main-content #quesition-top #q-icon {
+    font-size: 130%;
+    letter-spacing: .06em;
+  }
+  #main-content #quesition-top h1 {
+    font-size: 120%;
+  }
 }
 
 #main-content #answer {
@@ -995,6 +1327,54 @@ header > div #header-bt p {
 
 #main-content #answer > div > div > div #answer-3-img {
   background-image: url(../img/asada.jpg);
+}
+
+@media (max-width: 1190px) {
+  #main-content #answer {
+    height: 1063px;
+  }
+  #main-content #answer > div {
+    padding: 0;
+  }
+  #main-content #answer > div h1 {
+    font-size: 146%;
+    margin-bottom: 12px;
+    letter-spacing: .08em;
+  }
+  #main-content #answer > div h2 {
+    font-size: 87.5%;
+    margin-bottom: 28px;
+  }
+  #main-content #answer > div small {
+    font-size: 74%;
+  }
+  #main-content #answer > div > div {
+    max-width: none;
+    width: 90%;
+    margin-left: 0;
+    margin-top: 29px;
+  }
+  #main-content #answer > div > div > div .answer-img {
+    padding-bottom: calc(23%);
+  }
+  #main-content #answer > div > div > div .answer-text {
+    -webkit-box-flex: 3.3;
+        -ms-flex: 3.3;
+            flex: 3.3;
+  }
+  #main-content #answer > div > div > div .answer-text p {
+    display: inline-block;
+    margin: 0 270px 10px 0;
+    padding-left: 28px;
+    max-width: 714px;
+  }
+  #main-content #answer > div > div > div .answer-text a {
+    padding-left: 28px;
+    letter-spacing: .04em;
+  }
+  #main-content #answer > div > div > div .answer-text a i {
+    letter-spacing: .065em;
+  }
 }
 
 #main-content #study {
@@ -1067,6 +1447,45 @@ header > div #header-bt p {
   border-bottom: 1px dashed #E5E5E5;
 }
 
+@media (max-width: 1190px) {
+  #main-content #study {
+    padding-top: 60px;
+    height: 765px;
+  }
+  #main-content #study > div h1 {
+    font-size: 153%;
+    margin-bottom: 11.5px;
+    letter-spacing: .03em;
+  }
+  #main-content #study > div h2 {
+    font-size: 90%;
+    letter-spacing: .06em;
+    margin-bottom: 53px;
+  }
+  #main-content #study > div #study-group {
+    max-width: 535px;
+  }
+  #main-content #study > div #study-group #study-a dd:first-of-type {
+    height: 53px;
+  }
+  #main-content #study > div #study-group dt {
+    font-size: 107%;
+    height: 55px;
+    line-height: 56px;
+  }
+  #main-content #study > div #study-group dd {
+    padding: 10px 15px 0 15px;
+    height: 42.3px;
+    line-height: normal;
+    font-size: 87%;
+  }
+  #main-content #study > div #study-group dd:first-of-type {
+    height: 75px;
+    line-height: 23px;
+    padding-top: 20px;
+  }
+}
+
 #main-content #study-bottom {
   background: #016EA9;
   height: 142px;
@@ -1079,6 +1498,15 @@ header > div #header-bt p {
   font-size: 130%;
   margin: 0;
   letter-spacing: .026em;
+}
+
+@media (max-width: 1190px) {
+  #main-content #study-bottom {
+    height: 129px;
+  }
+  #main-content #study-bottom h1 {
+    font-size: 106%;
+  }
 }
 
 #main-content #schedule {
@@ -1174,6 +1602,7 @@ header > div #header-bt p {
 }
 
 #main-content #schedule > div > div #schedule-info4 .schedule-text small {
+  color: #787878;
   letter-spacing: .065em;
   font-size: 90%;
 }
@@ -1203,6 +1632,80 @@ header > div #header-bt p {
 
 #main-content #schedule > div > div > span:nth-of-type(even) {
   background: url(../img/flowline2.png) no-repeat center center/100% auto;
+}
+
+@media (max-width: 1190px) {
+  #main-content #schedule {
+    padding-top: 42px;
+    height: 1765px;
+  }
+  #main-content #schedule > div h1 {
+    font-size: 147%;
+    margin-bottom: 37px;
+  }
+  #main-content #schedule > div > div {
+    max-width: 1055px;
+    margin-top: 26px;
+  }
+  #main-content #schedule > div > div .schedule-text h2, #main-content #schedule > div > div .schedule-text h3 {
+    letter-spacing: .0615em;
+    font-size: 90%;
+  }
+  #main-content #schedule > div > div .schedule-text p {
+    font-size: 72%;
+    letter-spacing: .025em;
+    line-height: 18px;
+  }
+  #main-content #schedule > div > div #schedule-info1 .schedule-text p {
+    font-size: 72%;
+    letter-spacing: .025em;
+    line-height: 18px;
+  }
+  #main-content #schedule > div > div #schedule-info2 {
+    height: 235px;
+  }
+  #main-content #schedule > div > div #schedule-info2 .schedule-text p {
+    font-size: 72%;
+    letter-spacing: .025em;
+    line-height: 18px;
+    margin-bottom: 19.5px;
+  }
+  #main-content #schedule > div > div #schedule-info3 {
+    height: 200px;
+  }
+  #main-content #schedule > div > div #schedule-info3 .schedule-text {
+    padding-top: 40px;
+  }
+  #main-content #schedule > div > div #schedule-info3 .schedule-text h3 {
+    letter-spacing: .065em;
+  }
+  #main-content #schedule > div > div #schedule-info4 .schedule-text {
+    padding-top: 40px;
+  }
+  #main-content #schedule > div > div #schedule-info4 .schedule-text h3 {
+    margin-bottom: 16px;
+  }
+  #main-content #schedule > div > div #schedule-info4 .schedule-text small {
+    font-size: 69.5%;
+    font-weight: normal;
+  }
+  #main-content #schedule > div > div #schedule-info5 {
+    height: 224px;
+  }
+  #main-content #schedule > div > div #schedule-info5 .schedule-img h2 {
+    margin-top: 11px;
+  }
+  #main-content #schedule > div > div #schedule-info5 .schedule-text {
+    padding-top: 29px;
+  }
+  #main-content #schedule > div > div #schedule-info5 .schedule-text h2 {
+    line-height: 41.6px;
+    letter-spacing: .063em;
+  }
+  #main-content #schedule > div > div > span {
+    height: 67px;
+    max-width: 800px;
+  }
 }
 
 #main-content #why-bangkok {
@@ -1260,6 +1763,42 @@ header > div #header-bt p {
   margin: 22px 0 0 0;
 }
 
+@media (max-width: 1190px) {
+  #main-content #why-bangkok {
+    height: 385px;
+    background-size: auto 119.3%;
+  }
+  #main-content #why-bangkok > div {
+    padding: 61px 0 0 58px;
+  }
+  #main-content #why-bangkok > div h1 {
+    font-size: 146%;
+    letter-spacing: .145em;
+  }
+  #main-content #why-bangkok > div p {
+    margin: 22px 0 21px 1px;
+    font-size: 75%;
+    letter-spacing: -.012em;
+    line-height: 18.4px;
+  }
+  #main-content #why-bangkok > div ul li {
+    margin-bottom: 10.3px;
+    font-size: 90%;
+    letter-spacing: .062em;
+  }
+  #main-content #why-bangkok > div ul li::before {
+    height: 3.5px;
+    width: 3.5px;
+    top: 8px;
+    left: 6px;
+  }
+  #main-content #why-bangkok > div h2 {
+    font-size: 96%;
+    letter-spacing: .128em;
+    margin-top: 21px;
+  }
+}
+
 #main-content #benefit {
   background: #F7C23C;
   height: 695px;
@@ -1315,15 +1854,18 @@ header > div #header-bt p {
 }
 
 #main-content #benefit > div > div h1 {
+  display: inline-block;
   position: absolute;
   top: -72px;
   left: 50%;
-  font-size: 175%;
+  font-size: 170%;
+  letter-spacing: .07em;
   z-index: 3;
   line-height: 45px;
   background: #F7C23C;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  width: 50%;
 }
 
 #main-content #benefit > div > div > div {
@@ -1355,6 +1897,36 @@ header > div #header-bt p {
 
 #main-content #benefit > div > div #benefit-3 {
   padding-top: 63px;
+}
+
+@media (max-width: 1190px) {
+  #main-content #benefit {
+    padding-top: 61px;
+    height: 679px;
+  }
+  #main-content #benefit > div h1 {
+    font-size: 145%;
+    letter-spacing: .083em;
+  }
+  #main-content #benefit > div h1 i {
+    font-size: 85%;
+    margin-right: 0;
+  }
+  #main-content #benefit > div > p {
+    font-size: 88.6%;
+    margin: 42px 0 125px 0;
+    letter-spacing: .078em;
+  }
+  #main-content #benefit > div > div {
+    max-width: 1093px;
+  }
+  #main-content #benefit > div > div h1 {
+    top: -40.6px;
+    font-size: 150%;
+    line-height: 37px;
+    letter-spacing: .05em;
+    width: 36%;
+  }
 }
 
 #main-content #no-volunteer {
@@ -1389,6 +1961,27 @@ header > div #header-bt p {
 
 #main-content #no-volunteer > div h1::before, #main-content #no-volunteer > div h1::after {
   border-color: white;
+}
+
+@media (max-width: 1190px) {
+  #main-content #no-volunteer {
+    padding-top: 59px;
+    height: 473px;
+    background-size: auto 104%;
+  }
+  #main-content #no-volunteer > div h2 {
+    font-size: 150%;
+    letter-spacing: .05em;
+  }
+  #main-content #no-volunteer > div p {
+    font-size: 95%;
+    line-height: 25.9px;
+    letter-spacing: .135em;
+  }
+  #main-content #no-volunteer > div h1 {
+    font-size: 158%;
+    margin-bottom: 18px;
+  }
 }
 
 #main-content #message {
@@ -1456,6 +2049,38 @@ header > div #header-bt p {
   margin: 9px 0 0 29px;
 }
 
+@media (max-width: 1190px) {
+  #main-content #message {
+    height: 625px;
+    padding-top: 60px;
+  }
+  #main-content #message > div h1 {
+    font-size: 150%;
+    letter-spacing: .05em;
+    margin-bottom: 37px;
+  }
+  #main-content #message > div h2 {
+    font-size: 100%;
+    font-weight: normal;
+    letter-spacing: .075em;
+    margin-bottom: 59px;
+  }
+  #main-content #message > div > div {
+    max-width: 1004px;
+  }
+  #main-content #message > div > div #message-text {
+    -webkit-box-flex: 3.52;
+        -ms-flex: 3.52;
+            flex: 3.52;
+  }
+  #main-content #message > div > div #message-text p {
+    margin: 0 0 10px 38px;
+  }
+  #main-content #message > div > div #message-text p:last-of-type {
+    margin: 9px 0 0 38px;
+  }
+}
+
 #main-content #contact {
   padding-top: 57px;
   background: #EBB94D;
@@ -1521,6 +2146,31 @@ header > div #header-bt p {
   cursor: pointer;
 }
 
+@media (max-width: 1190px) {
+  #main-content #contact {
+    padding-top: 60px;
+    height: 691px;
+  }
+  #main-content #contact > div h1 {
+    font-size: 157%;
+    margin-bottom: 20px;
+  }
+  #main-content #contact > div h1 i {
+    font-size: 100%;
+    margin-right: 2px;
+  }
+  #main-content #contact > div h2 {
+    font-size: 90%;
+    letter-spacing: .065em;
+  }
+  #main-content #contact > div form {
+    max-width: 821px;
+  }
+  #main-content #contact > div form textarea {
+    margin-bottom: 33px;
+  }
+}
+
 #main-content #question {
   height: 1215px;
   padding-top: 58px;
@@ -1547,6 +2197,7 @@ header > div #header-bt p {
   width: 100%;
   height: 63px;
   line-height: 41px;
+  border-radius: 2px;
   padding: 10px 20px 10px 20px;
   border: 1px solid #E5E5E5;
   list-style-type: none;
@@ -1583,6 +2234,35 @@ header > div #header-bt p {
   margin-top: 5.2px;
 }
 
+@media (max-width: 1190px) {
+  #main-content #question {
+    padding-top: 60px;
+    height: 1153px;
+  }
+  #main-content #question h1 {
+    font-size: 155%;
+    margin-bottom: 41px;
+  }
+  #main-content #question h1 i {
+    font-size: 90%;
+    vertical-align: 0;
+    margin-right: 3px;
+  }
+  #main-content #question > div ul {
+    max-width: 1055px;
+  }
+  #main-content #question > div ul li {
+    height: 59px;
+  }
+  #main-content #question > div ul li:not(:first-of-type) {
+    margin-top: 5.1px;
+  }
+  #main-content #question > div ul li p {
+    font-size: 100.5%;
+    line-height: 38px;
+  }
+}
+
 footer {
   background: #ECECEC;
   height: 176px;
@@ -1614,5 +2294,12 @@ footer small a {
 
 footer .sns {
   margin: 14px auto 30px auto;
+}
+
+@media (max-width: 1190px) {
+  footer .sns {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+  }
 }
 /*# sourceMappingURL=style.css.map */
