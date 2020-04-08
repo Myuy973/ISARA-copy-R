@@ -12,11 +12,11 @@
         @content;
     }
 }
-// @mixin  tabled{
-//     @media (max-width: 1199px) {
-//         @content;
-//     }
-// }
+@mixin  tabled{
+    @media (max-width: 991px) {
+        @content;
+    }
+}
 // @mixin  mobile {
 //     @media (max-width: 1199px) {
 //         @content;
@@ -56,7 +56,7 @@ header {
         max-width: 1155px;
         #main-header-log {
             height: 75px;
-            width: 500px;
+            width: 350px;
             display: inline-block;
             img {
                 width: 126px;
@@ -101,6 +101,21 @@ header {
             }
         }
     }
+
+    @include tabled() {
+        height: 74px;
+        > div {
+            #main-header-log {
+                p {
+                    vertical-align: -6.5px;
+                }
+            }
+            #header-bt {
+                font-size: 86%;
+                line-height: 37px;
+            }
+        }
+    }
 }
 
 #main-content {
@@ -142,6 +157,11 @@ header {
                 font-size: 100%;
                 letter-spacing: .084em;
             }
+        }
+
+        @include tabled() {
+            background-position: 50% 100%;
+            height: 566px;
         }
     }
 
@@ -237,6 +257,12 @@ header {
                 }
             }
         }
+
+        @include tabled() {
+            > div {
+                max-width: 83.5%;
+            }
+        }
     }
 
     #top-question {
@@ -309,6 +335,11 @@ header {
                     }
                 }
             }
+        }
+
+        @include tabled() {
+            height: 576px;
+            padding-top: 38px;
         }
     }
 
@@ -447,6 +478,24 @@ header {
                 }
             }
         }
+
+        @include tabled() {
+            > div {
+                > h1 {
+                    line-height: 39px;
+                }
+                #about {
+                    line-height: 77px;
+                    font-size: 90%;
+                    letter-spacing: .07em;
+                }
+                > div {
+                    p {
+                        margin-bottom: 22px;
+                    }
+                }
+            }
+        }
     }
 
     #isara-info_2 {
@@ -573,6 +622,14 @@ header {
                 }
             }
         }
+
+        @include tabled() {
+            padding-top: 54px;
+            > div > div > div {
+                    padding-top: 19px;
+                    padding-bottom: 31px;
+            }
+        }
     }
 
     #isara-info_2-bottom {
@@ -596,6 +653,9 @@ header {
                 font-size: 98%;
                 line-height: 25px;
             }
+        }
+        @include tabled() {
+            padding-top: 38px;
         }
     }
 
@@ -672,6 +732,16 @@ header {
                 p:last-of-type {
                     font-size: 89%;
                     margin: 58px;
+                }
+            }
+        }
+
+        @include tabled() {
+            padding-top: 45px;
+            height: 527px;
+            > div {
+                p:first-of-type {
+                    margin-bottom: 59px;
                 }
             }
         }
@@ -838,6 +908,49 @@ header {
                 }
             }
         }
+
+        @include tabled() {
+            padding-top: 29px;
+            height: 1417px;
+            > div {
+                h1 {
+                    max-width: 837px;
+                }
+                #info_4-imgs {
+                    display: block;
+                    max-width: 815px;
+                    div  {
+                        > div {
+                            width: 295px;
+                            margin: 0 auto;
+                        }
+                        p {
+                            letter-spacing: .095em;
+                        }
+                    }
+                    div:not(:last-of-type) {
+                        margin: 0 0 27px 0;
+                    }
+                    #info_4-1 {
+                        flex: none;
+                    }
+                    #info_4-2 {
+                        flex: none;
+                    }
+                    #info_4-3 {
+                        flex: none;
+                    }
+                }
+
+                #info_4-sap {
+                    max-width: 836px;
+                }
+                > p {
+                    margin-top: 39.1px;
+                    letter-spacing: .05em;
+                }
+            }
+        }
     }
 
     #menber {
@@ -930,6 +1043,7 @@ header {
                             }
                             h3 {
                                 font-size: 88%;
+                                margin-bottom: 9.4px;
                             }
                             p {
                                 font-size: 89%;
@@ -963,6 +1077,59 @@ header {
                     }
                     td:last-of-type {
                         .menber-text { padding-top: 39px;}
+                    }
+                }
+            }
+        }
+
+        @include tabled() {
+            padding-top: 73px;
+            height: 1950px;
+            > p {
+                margin-top: 32px;
+            }
+            table {
+                max-width: 767px;
+                width: 100%;
+                tr {
+                    &:first-of-type td:last-of-type .menber-text,
+                    &:last-of-type td  .menber-text {
+                        margin-top: 194px;
+                    }
+                    &:last-of-type td {
+                        padding: 0;
+                        &:first-of-type {
+                            .menber-text {
+                                padding-top: 39px;
+                            }
+                        }
+                        .menber-img {
+                            top: -163px;
+                        }
+                        .menber-text {
+                            height: auto;
+                            padding-top: 39px;
+                        }
+
+                    }
+                    td {
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                        .menber-img {
+                            top: -161px
+                        }
+                        .menber-text {
+                            width: 100%;
+                            margin-top: 162px;
+                            padding-top: 39px;
+                            padding-bottom: 49px;
+                            height: auto;
+                            p {
+                                font-size: 87%;
+                                letter-spacing: .096em;
+                            }
+                        }
                     }
                 }
             }
@@ -1111,6 +1278,37 @@ header {
                }
             }
         }
+
+        @include tabled() {
+            height: 1213px;
+            > div {
+                padding: 0 20px;
+                > div {
+                    width: 100%;
+                    > div {
+                        &:not(:last-of-type) {
+                            margin-bottom: 41.5px;
+                        }
+                        .answer-img {
+                            padding-bottom: calc(31.3%);
+                        }
+                        .answer-text {
+                            flex: 2.15;
+                            padding-top: 14px;
+                            p {
+                                max-width: none;
+                                margin-right: 0;
+                                letter-spacing: .06em;
+                                margin-bottom: 9px;
+                            }
+                            a {
+                                letter-spacing: .03em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     #study {
@@ -1210,6 +1408,27 @@ header {
                 }
             }
         }
+
+        @include tabled() {
+            padding-top: 61px;
+            height: 1079px;
+            background-size: auto 100%;
+            > div {
+                h2 {
+                    margin-bottom: 53px;
+                }
+                #study-group {
+                    max-width: 572px;
+                    display: block;
+                    > div:first-of-type {
+                        margin: 0 0 12px 0;
+                    }
+                    dd:first-of-type {
+                        height: 52px;
+                    }
+                }
+            }
+        }
     }
 
     #study-bottom {
@@ -1227,6 +1446,15 @@ header {
             height: 129px;
             h1 {
                 font-size: 106%;
+            }
+        }
+
+        @include tabled() {
+            height: 128px;
+            padding-top: 40px;
+            h1 {
+                font-size: 100%;
+                letter-spacing: .076em;
             }
         }
     }
@@ -1313,10 +1541,12 @@ header {
                 #schedule-info5 {
                     height: 226px;
                     .schedule-text {
-                        padding: 32px 38px 0 31px;
+                        padding: 42px 38px 0 31px;
                         h2 {
-                            margin: 0;
-                            line-height: 44.8px;
+                            letter-spacing: .08em;
+                            &:not(:first-of-type) {
+                                margin: 0 0 20px 0;
+                            }
                         }
                     }
                 }
@@ -1402,16 +1632,85 @@ header {
                             }
                         }
                         .schedule-text{
-                            padding-top: 29px;
+                            padding-top: 39px;
                             h2 {
-                                line-height: 41.6px;
                                 letter-spacing: .063em;
+                                &:not(:first-of-type) {
+                                    margin: 0 0 20px 0;
+                                }
                             }
                         }
                     }
                     > span {
                         height: 67px;
                         max-width: 800px;
+                    }
+                }
+            }
+        }
+
+        @include tabled() {
+            height: 1733px;
+            > div {
+                h1 {
+                    margin-bottom: 47px;
+                }    
+                #schedule-icon {
+                    max-width: 895px;
+                }
+                > div {
+                    margin-top: 35px;
+                    max-width: 856px;
+                    .schedule-text  {
+                        h2, h3 {
+                            letter-spacing: .055em;
+                        }
+                    }
+                    #schedule-info1 {
+                        height: 225px;
+                        .schedule-text {
+                            padding-top: 41px;
+                            p {
+                                letter-spacing: .022em;
+                            }
+                        }
+                    }
+                    #schedule-info2 {
+                        height: 275px;
+                        .schedule-text {
+                            padding-top: 40.5px;
+                            padding-right: 35px;
+                            p {
+                                letter-spacing: .019em;
+                                line-height: 18.4px;
+                            }
+                        }
+                    }
+                    #schedule-info3 {
+                        height: 200px;
+                        .schedule-text {
+                            h3 {
+                                letter-spacing: .058em;
+                            }
+                        }
+                    }
+                    #schedule-info4 {
+                        height: 245px;
+                    }
+                    #schedule-info5 {
+                        height: 237px;
+                        .schedule-img {
+                            padding-top: 29px;
+                        }
+                        .schedule-text {
+                            h2 {
+                                letter-spacing: .059em;
+                            }
+                        }
+                    }
+                    > span {
+                        height: 50px;
+                        max-width: 601px;
                     }
                 }
             }
@@ -1497,6 +1796,28 @@ header {
                     font-size: 96%;
                     letter-spacing: .128em;
                     margin-top: 21px;
+                }
+            }
+        }
+
+        @include tabled() {
+            height: 383px;
+            background-size: auto 100%;
+            > div {
+                p {
+                    margin: 21px 0 21px 1px;
+                }
+                ul {
+                    li {
+                        margin-bottom: 10.5px;
+                        font-size: 85%;
+                        letter-spacing: .118em;
+                    }
+                }
+                h2 {
+                    font-size: 100%;
+                    letter-spacing: .075em;
+                    margin: 21px 0 0 1px;
                 }
             }
         }
@@ -1614,6 +1935,34 @@ header {
                 }
             }
         }
+
+        @include tabled() {
+            padding-top: 60.5px;
+            height: auto;
+            padding-bottom: 40px;
+            > div {
+                p {
+                    margin-bottom: 124px;
+                }
+                > div {
+                    max-width: 895px;
+                    display: block;
+                    height: auto;
+                    padding-bottom: 51px;
+                    padding-top: 48px;
+                    h1 {
+                        top: -41px;
+                        width: 44%;
+                    }
+                    #benefit-1, #benefit-2, #benefit-3 {
+                        margin: 0 auto;
+                    }
+                    #benefit-1, #benefit-2 {
+                        margin-bottom: 22px;
+                    }
+                }
+            }
+        }
     }
 
     #no-volunteer {
@@ -1664,6 +2013,16 @@ header {
                 h1 {
                     font-size: 158%;
                     margin-bottom: 18px;
+                }
+            }
+        }
+
+        @include tabled() {
+            padding-top: 59.3px;
+            height: 472px;
+            > div {
+                > h1 {
+                    letter-spacing: -.009em;
                 }
             }
         }
@@ -1753,6 +2112,32 @@ header {
                 }
             }
         }
+
+        @include tabled() {
+            height: auto;
+            padding-bottom: 107px;
+            > div {
+                > div {
+                    max-width: 926px;
+                    display: inline-block;
+                    #message-img {
+                        padding-bottom: calc(100%*576/768);
+                    }
+                    #message-text {
+                        padding-top: 40px;
+                        padding-right: .6px;
+                        p {
+                            margin-left: 0;
+                            letter-spacing: .072em;
+                            margin-bottom: 8.5px;
+                            &:last-of-type {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     #contact {
@@ -1838,6 +2223,21 @@ header {
                     }
                 }
                 
+            }
+        }
+
+        @include tabled() {
+            height: 689px;
+            > div {
+                form {
+                    max-width: 682px;
+                    input[type="text"] {
+                        height: 54px;
+                    }
+                    textarea {
+                        margin-bottom: 34px;
+                    }
+                }
             }
         }
     }
@@ -1930,6 +2330,23 @@ header {
                 }
             }
         }
+
+        @include tabled() {
+            height: 1150px;
+            > div {
+                ul {
+                    max-width: 856px;
+                    li {
+                        &:not(:first-of-type) {
+                            margin-top: 4.84px;
+                        }
+                        p {
+                            line-height: 37px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -1961,6 +2378,13 @@ footer {
         margin: 14px auto 30px auto;
         @include pc-small() {
             transform: translateX(-2px);
+        }
+    }
+
+    @include tabled() {
+        padding-top: 39px;
+        .sns {
+            margin: 13px auto 31px auto;
         }
     }
 }

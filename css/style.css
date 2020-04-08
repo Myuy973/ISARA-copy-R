@@ -230,7 +230,7 @@ header > div {
 
 header > div #main-header-log {
   height: 75px;
-  width: 500px;
+  width: 350px;
   display: inline-block;
 }
 
@@ -284,6 +284,19 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 991px) {
+  header {
+    height: 74px;
+  }
+  header > div #main-header-log p {
+    vertical-align: -6.5px;
+  }
+  header > div #header-bt {
+    font-size: 86%;
+    line-height: 37px;
+  }
+}
+
 #main-content #top-page {
   background: url(../img/main.jpg) no-repeat 12% 137%/auto 92%;
   height: 568px;
@@ -325,6 +338,13 @@ header > div #header-bt p {
     line-height: 17px;
     font-size: 100%;
     letter-spacing: .084em;
+  }
+}
+
+@media (max-width: 991px) {
+  #main-content #top-page {
+    background-position: 50% 100%;
+    height: 566px;
   }
 }
 
@@ -430,6 +450,12 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 991px) {
+  #main-content #top-page-bottom > div {
+    max-width: 83.5%;
+  }
+}
+
 #main-content #top-question {
   height: 580px;
   padding-top: 40px;
@@ -500,6 +526,13 @@ header > div #header-bt p {
   #main-content #top-question > div p:last-of-type span span:last-of-type {
     top: 17px;
     height: 8px;
+  }
+}
+
+@media (max-width: 991px) {
+  #main-content #top-question {
+    height: 576px;
+    padding-top: 38px;
   }
 }
 
@@ -656,6 +689,20 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 991px) {
+  #main-content #isara-info_1 > div > h1 {
+    line-height: 39px;
+  }
+  #main-content #isara-info_1 > div #about {
+    line-height: 77px;
+    font-size: 90%;
+    letter-spacing: .07em;
+  }
+  #main-content #isara-info_1 > div > div p {
+    margin-bottom: 22px;
+  }
+}
+
 #main-content #isara-info_2 {
   height: 436px;
   background: url(../img/aboutsecondbg.jpg) no-repeat center center/auto 100%;
@@ -786,6 +833,16 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 991px) {
+  #main-content #isara-info_2 {
+    padding-top: 54px;
+  }
+  #main-content #isara-info_2 > div > div > div {
+    padding-top: 19px;
+    padding-bottom: 31px;
+  }
+}
+
 #main-content #isara-info_2-bottom {
   background: #016EA9;
   text-align: center;
@@ -811,6 +868,12 @@ header > div #header-bt p {
   #main-content #isara-info_2-bottom p {
     font-size: 98%;
     line-height: 25px;
+  }
+}
+
+@media (max-width: 991px) {
+  #main-content #isara-info_2-bottom {
+    padding-top: 38px;
   }
 }
 
@@ -897,6 +960,16 @@ header > div #header-bt p {
   #main-content #isara-info_3 > div p:last-of-type {
     font-size: 89%;
     margin: 58px;
+  }
+}
+
+@media (max-width: 991px) {
+  #main-content #isara-info_3 {
+    padding-top: 45px;
+    height: 527px;
+  }
+  #main-content #isara-info_3 > div p:first-of-type {
+    margin-bottom: 59px;
   }
 }
 
@@ -1085,6 +1158,52 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 991px) {
+  #main-content #isara-info_4 {
+    padding-top: 29px;
+    height: 1417px;
+  }
+  #main-content #isara-info_4 > div h1 {
+    max-width: 837px;
+  }
+  #main-content #isara-info_4 > div #info_4-imgs {
+    display: block;
+    max-width: 815px;
+  }
+  #main-content #isara-info_4 > div #info_4-imgs div > div {
+    width: 295px;
+    margin: 0 auto;
+  }
+  #main-content #isara-info_4 > div #info_4-imgs div p {
+    letter-spacing: .095em;
+  }
+  #main-content #isara-info_4 > div #info_4-imgs div:not(:last-of-type) {
+    margin: 0 0 27px 0;
+  }
+  #main-content #isara-info_4 > div #info_4-imgs #info_4-1 {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  #main-content #isara-info_4 > div #info_4-imgs #info_4-2 {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  #main-content #isara-info_4 > div #info_4-imgs #info_4-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  #main-content #isara-info_4 > div #info_4-sap {
+    max-width: 836px;
+  }
+  #main-content #isara-info_4 > div > p {
+    margin-top: 39.1px;
+    letter-spacing: .05em;
+  }
+}
+
 #main-content #menber {
   height: 1370px;
   background: url(../img/teacherbg.jpg) no-repeat center center/auto 100%;
@@ -1180,6 +1299,7 @@ header > div #header-bt p {
   }
   #main-content #menber table tr td .menber-text h3 {
     font-size: 88%;
+    margin-bottom: 9.4px;
   }
   #main-content #menber table tr td .menber-text p {
     font-size: 89%;
@@ -1208,6 +1328,56 @@ header > div #header-bt p {
   }
   #main-content #menber table tr:last-of-type td:last-of-type .menber-text {
     padding-top: 39px;
+  }
+}
+
+@media (max-width: 991px) {
+  #main-content #menber {
+    padding-top: 73px;
+    height: 1950px;
+  }
+  #main-content #menber > p {
+    margin-top: 32px;
+  }
+  #main-content #menber table {
+    max-width: 767px;
+    width: 100%;
+  }
+  #main-content #menber table tr:first-of-type td:last-of-type .menber-text,
+  #main-content #menber table tr:last-of-type td .menber-text {
+    margin-top: 194px;
+  }
+  #main-content #menber table tr:last-of-type td {
+    padding: 0;
+  }
+  #main-content #menber table tr:last-of-type td:first-of-type .menber-text {
+    padding-top: 39px;
+  }
+  #main-content #menber table tr:last-of-type td .menber-img {
+    top: -163px;
+  }
+  #main-content #menber table tr:last-of-type td .menber-text {
+    height: auto;
+    padding-top: 39px;
+  }
+  #main-content #menber table tr td {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  #main-content #menber table tr td .menber-img {
+    top: -161px;
+  }
+  #main-content #menber table tr td .menber-text {
+    width: 100%;
+    margin-top: 162px;
+    padding-top: 39px;
+    padding-bottom: 49px;
+    height: auto;
+  }
+  #main-content #menber table tr td .menber-text p {
+    font-size: 87%;
+    letter-spacing: .096em;
   }
 }
 
@@ -1377,6 +1547,39 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 991px) {
+  #main-content #answer {
+    height: 1213px;
+  }
+  #main-content #answer > div {
+    padding: 0 20px;
+  }
+  #main-content #answer > div > div {
+    width: 100%;
+  }
+  #main-content #answer > div > div > div:not(:last-of-type) {
+    margin-bottom: 41.5px;
+  }
+  #main-content #answer > div > div > div .answer-img {
+    padding-bottom: calc(31.3%);
+  }
+  #main-content #answer > div > div > div .answer-text {
+    -webkit-box-flex: 2.15;
+        -ms-flex: 2.15;
+            flex: 2.15;
+    padding-top: 14px;
+  }
+  #main-content #answer > div > div > div .answer-text p {
+    max-width: none;
+    margin-right: 0;
+    letter-spacing: .06em;
+    margin-bottom: 9px;
+  }
+  #main-content #answer > div > div > div .answer-text a {
+    letter-spacing: .03em;
+  }
+}
+
 #main-content #study {
   background: url(../img/classbg.jpg) no-repeat center center/100% auto;
   color: white;
@@ -1486,6 +1689,27 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 991px) {
+  #main-content #study {
+    padding-top: 61px;
+    height: 1079px;
+    background-size: auto 100%;
+  }
+  #main-content #study > div h2 {
+    margin-bottom: 53px;
+  }
+  #main-content #study > div #study-group {
+    max-width: 572px;
+    display: block;
+  }
+  #main-content #study > div #study-group > div:first-of-type {
+    margin: 0 0 12px 0;
+  }
+  #main-content #study > div #study-group dd:first-of-type {
+    height: 52px;
+  }
+}
+
 #main-content #study-bottom {
   background: #016EA9;
   height: 142px;
@@ -1506,6 +1730,17 @@ header > div #header-bt p {
   }
   #main-content #study-bottom h1 {
     font-size: 106%;
+  }
+}
+
+@media (max-width: 991px) {
+  #main-content #study-bottom {
+    height: 128px;
+    padding-top: 40px;
+  }
+  #main-content #study-bottom h1 {
+    font-size: 100%;
+    letter-spacing: .076em;
   }
 }
 
@@ -1612,12 +1847,15 @@ header > div #header-bt p {
 }
 
 #main-content #schedule > div > div #schedule-info5 .schedule-text {
-  padding: 32px 38px 0 31px;
+  padding: 42px 38px 0 31px;
 }
 
 #main-content #schedule > div > div #schedule-info5 .schedule-text h2 {
-  margin: 0;
-  line-height: 44.8px;
+  letter-spacing: .08em;
+}
+
+#main-content #schedule > div > div #schedule-info5 .schedule-text h2:not(:first-of-type) {
+  margin: 0 0 20px 0;
 }
 
 #main-content #schedule > div > div > span {
@@ -1696,15 +1934,78 @@ header > div #header-bt p {
     margin-top: 11px;
   }
   #main-content #schedule > div > div #schedule-info5 .schedule-text {
-    padding-top: 29px;
+    padding-top: 39px;
   }
   #main-content #schedule > div > div #schedule-info5 .schedule-text h2 {
-    line-height: 41.6px;
     letter-spacing: .063em;
+  }
+  #main-content #schedule > div > div #schedule-info5 .schedule-text h2:not(:first-of-type) {
+    margin: 0 0 20px 0;
   }
   #main-content #schedule > div > div > span {
     height: 67px;
     max-width: 800px;
+  }
+}
+
+@media (max-width: 991px) {
+  #main-content #schedule {
+    height: 1733px;
+  }
+  #main-content #schedule > div h1 {
+    margin-bottom: 47px;
+  }
+  #main-content #schedule > div #schedule-icon {
+    max-width: 895px;
+  }
+  #main-content #schedule > div > div {
+    margin-top: 35px;
+    max-width: 856px;
+  }
+  #main-content #schedule > div > div .schedule-text h2, #main-content #schedule > div > div .schedule-text h3 {
+    letter-spacing: .055em;
+  }
+  #main-content #schedule > div > div #schedule-info1 {
+    height: 225px;
+  }
+  #main-content #schedule > div > div #schedule-info1 .schedule-text {
+    padding-top: 41px;
+  }
+  #main-content #schedule > div > div #schedule-info1 .schedule-text p {
+    letter-spacing: .022em;
+  }
+  #main-content #schedule > div > div #schedule-info2 {
+    height: 275px;
+  }
+  #main-content #schedule > div > div #schedule-info2 .schedule-text {
+    padding-top: 40.5px;
+    padding-right: 35px;
+  }
+  #main-content #schedule > div > div #schedule-info2 .schedule-text p {
+    letter-spacing: .019em;
+    line-height: 18.4px;
+  }
+  #main-content #schedule > div > div #schedule-info3 {
+    height: 200px;
+  }
+  #main-content #schedule > div > div #schedule-info3 .schedule-text h3 {
+    letter-spacing: .058em;
+  }
+  #main-content #schedule > div > div #schedule-info4 {
+    height: 245px;
+  }
+  #main-content #schedule > div > div #schedule-info5 {
+    height: 237px;
+  }
+  #main-content #schedule > div > div #schedule-info5 .schedule-img {
+    padding-top: 29px;
+  }
+  #main-content #schedule > div > div #schedule-info5 .schedule-text h2 {
+    letter-spacing: .059em;
+  }
+  #main-content #schedule > div > div > span {
+    height: 50px;
+    max-width: 601px;
   }
 }
 
@@ -1796,6 +2097,26 @@ header > div #header-bt p {
     font-size: 96%;
     letter-spacing: .128em;
     margin-top: 21px;
+  }
+}
+
+@media (max-width: 991px) {
+  #main-content #why-bangkok {
+    height: 383px;
+    background-size: auto 100%;
+  }
+  #main-content #why-bangkok > div p {
+    margin: 21px 0 21px 1px;
+  }
+  #main-content #why-bangkok > div ul li {
+    margin-bottom: 10.5px;
+    font-size: 85%;
+    letter-spacing: .118em;
+  }
+  #main-content #why-bangkok > div h2 {
+    font-size: 100%;
+    letter-spacing: .075em;
+    margin: 21px 0 0 1px;
   }
 }
 
@@ -1929,6 +2250,34 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 991px) {
+  #main-content #benefit {
+    padding-top: 60.5px;
+    height: auto;
+    padding-bottom: 40px;
+  }
+  #main-content #benefit > div p {
+    margin-bottom: 124px;
+  }
+  #main-content #benefit > div > div {
+    max-width: 895px;
+    display: block;
+    height: auto;
+    padding-bottom: 51px;
+    padding-top: 48px;
+  }
+  #main-content #benefit > div > div h1 {
+    top: -41px;
+    width: 44%;
+  }
+  #main-content #benefit > div > div #benefit-1, #main-content #benefit > div > div #benefit-2, #main-content #benefit > div > div #benefit-3 {
+    margin: 0 auto;
+  }
+  #main-content #benefit > div > div #benefit-1, #main-content #benefit > div > div #benefit-2 {
+    margin-bottom: 22px;
+  }
+}
+
 #main-content #no-volunteer {
   background: url(../img/specialdetail.jpg) no-repeat center center/auto 102%;
   height: 520px;
@@ -1981,6 +2330,16 @@ header > div #header-bt p {
   #main-content #no-volunteer > div h1 {
     font-size: 158%;
     margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  #main-content #no-volunteer {
+    padding-top: 59.3px;
+    height: 472px;
+  }
+  #main-content #no-volunteer > div > h1 {
+    letter-spacing: -.009em;
   }
 }
 
@@ -2081,6 +2440,32 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 991px) {
+  #main-content #message {
+    height: auto;
+    padding-bottom: 107px;
+  }
+  #main-content #message > div > div {
+    max-width: 926px;
+    display: inline-block;
+  }
+  #main-content #message > div > div #message-img {
+    padding-bottom: calc(100%*576/768);
+  }
+  #main-content #message > div > div #message-text {
+    padding-top: 40px;
+    padding-right: .6px;
+  }
+  #main-content #message > div > div #message-text p {
+    margin-left: 0;
+    letter-spacing: .072em;
+    margin-bottom: 8.5px;
+  }
+  #main-content #message > div > div #message-text p:last-of-type {
+    margin-left: 0;
+  }
+}
+
 #main-content #contact {
   padding-top: 57px;
   background: #EBB94D;
@@ -2168,6 +2553,21 @@ header > div #header-bt p {
   }
   #main-content #contact > div form textarea {
     margin-bottom: 33px;
+  }
+}
+
+@media (max-width: 991px) {
+  #main-content #contact {
+    height: 689px;
+  }
+  #main-content #contact > div form {
+    max-width: 682px;
+  }
+  #main-content #contact > div form input[type="text"] {
+    height: 54px;
+  }
+  #main-content #contact > div form textarea {
+    margin-bottom: 34px;
   }
 }
 
@@ -2263,6 +2663,21 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 991px) {
+  #main-content #question {
+    height: 1150px;
+  }
+  #main-content #question > div ul {
+    max-width: 856px;
+  }
+  #main-content #question > div ul li:not(:first-of-type) {
+    margin-top: 4.84px;
+  }
+  #main-content #question > div ul li p {
+    line-height: 37px;
+  }
+}
+
 footer {
   background: #ECECEC;
   height: 176px;
@@ -2300,6 +2715,15 @@ footer .sns {
   footer .sns {
     -webkit-transform: translateX(-2px);
             transform: translateX(-2px);
+  }
+}
+
+@media (max-width: 991px) {
+  footer {
+    padding-top: 39px;
+  }
+  footer .sns {
+    margin: 13px auto 31px auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
