@@ -133,6 +133,8 @@ div.sns span:nth-of-type(3) {
   border: 1px solid #EBB94D;
   background: no-repeat center center/100% auto;
   padding-bottom: calc(31%);
+  width: 0;
+  height: 0;
 }
 
 .answer-text {
@@ -230,7 +232,7 @@ header > div {
 
 header > div #main-header-log {
   height: 75px;
-  width: 350px;
+  width: 400px;
   display: inline-block;
 }
 
@@ -261,7 +263,7 @@ header > div #header-bt {
   line-height: 45px;
   margin: 16px 0 16px 0;
   border-radius: 40px;
-  background: red;
+  background: #DA6B64;
   color: white;
   font-size: 87%;
   text-align: center;
@@ -284,6 +286,32 @@ header > div #header-bt p {
   }
 }
 
+header > div #header-bt-mobile {
+  display: none;
+  float: right;
+  width: 74px;
+  height: 60px;
+  color: white;
+  text-align: center;
+  background: #DA6B64;
+}
+
+header > div #header-bt-mobile a {
+  height: 100%;
+}
+
+header > div #header-bt-mobile i {
+  padding-top: 7px;
+  font-size: 149%;
+}
+
+header > div #header-bt-mobile p {
+  font-size: 70%;
+  letter-spacing: .2em;
+  font-weight: normal;
+  margin: -2px 0 0 0;
+}
+
 @media (max-width: 991px) {
   header {
     height: 74px;
@@ -294,6 +322,42 @@ header > div #header-bt p {
   header > div #header-bt {
     font-size: 86%;
     line-height: 37px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 60px;
+    padding-right: 0;
+    line-height: normal;
+  }
+  header > div #main-header-log {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    float: left;
+    height: 56px;
+    width: 210px;
+  }
+  header > div #main-header-log img {
+    width: 87px;
+    vertical-align: 0;
+  }
+  header > div #main-header-log p {
+    font-size: 73%;
+    height: 18px;
+    vertical-align: 0;
+    letter-spacing: 0;
+  }
+  header > div #header-bt {
+    display: none;
+  }
+  header > div #header-bt-mobile {
+    display: block;
   }
 }
 
@@ -348,6 +412,20 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 768px) {
+  #main-content #top-page {
+    background: url(../img/mainsp.jpg) no-repeat center 40%/100% auto;
+    padding-top: 159px;
+    height: 547px;
+  }
+  #main-content #top-page h2 {
+    line-height: 38px;
+  }
+  #main-content #top-page img {
+    margin: 19px 0 32px 0;
+  }
+}
+
 #main-content #top-page-bottom {
   background: #EBB94D;
   text-align: center;
@@ -388,7 +466,7 @@ header > div #header-bt p {
   height: 103px;
   line-height: 103px;
   border-radius: 103px;
-  background: red;
+  background: #DA6B64;
   margin: 47px 0 68px 0;
 }
 
@@ -456,6 +534,56 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 768px) {
+  #main-content #top-page-bottom {
+    padding-top: 15px;
+    height: 503px;
+  }
+  #main-content #top-page-bottom > div {
+    max-width: 79.5%;
+  }
+  #main-content #top-page-bottom > div > span {
+    width: 437px;
+    height: 20px;
+  }
+  #main-content #top-page-bottom > div > span p {
+    letter-spacing: .25em;
+  }
+  #main-content #top-page-bottom > div #top-page-bottom-bt {
+    height: 105px;
+    margin: 10px 0 24px 0;
+  }
+  #main-content #top-page-bottom > div #top-page-bottom-bt p {
+    font-size: 105%;
+    letter-spacing: .05em;
+    line-height: 28px;
+    padding-top: 24px;
+    width: 225px;
+    margin: 0 auto;
+    display: inline-block;
+  }
+  #main-content #top-page-bottom > div > p {
+    display: inline-block;
+    margin: 0 auto;
+    letter-spacing: .015em;
+    line-height: 24px;
+    width: 346px;
+    font-size: 90%;
+  }
+  #main-content #top-page-bottom > div > p:nth-of-type(2) {
+    width: 325px;
+  }
+  #main-content #top-page-bottom > div > p:last-of-type {
+    width: 272px;
+  }
+  #main-content #top-page-bottom > div > p:not(:last-of-type) {
+    margin-bottom: 24.5px;
+  }
+  #main-content #top-page-bottom > div .sns {
+    margin-top: 22.5px;
+  }
+}
+
 #main-content #top-question {
   height: 580px;
   padding-top: 40px;
@@ -467,12 +595,20 @@ header > div #header-bt p {
   padding: 0 10px;
 }
 
+#main-content #top-question > div h1 br {
+  display: none;
+}
+
 #main-content #top-question > div p {
   font-weight: normal;
   font-size: 127%;
   margin: 0;
   line-height: 32px;
   letter-spacing: .9px;
+}
+
+#main-content #top-question > div p br {
+  display: none;
 }
 
 #main-content #top-question > div p:nth-of-type(2) {
@@ -536,6 +672,46 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 768px) {
+  #main-content #top-question {
+    height: 660px;
+    padding-top: 29px;
+    background-size: auto 56%;
+    background-position: center bottom;
+  }
+  #main-content #top-question > div {
+    padding: 0 18px;
+  }
+  #main-content #top-question > div h1 {
+    height: 118px;
+    line-height: 37px;
+    padding-top: 27px;
+    margin-bottom: 23px;
+  }
+  #main-content #top-question > div h1 br {
+    display: inline-block;
+  }
+  #main-content #top-question > div h1::before, #main-content #top-question > div h1::after {
+    width: 26px;
+    height: 25px;
+  }
+  #main-content #top-question > div p {
+    letter-spacing: -.04em;
+  }
+  #main-content #top-question > div p br {
+    display: inline-block;
+  }
+  #main-content #top-question > div p:nth-of-type(2) {
+    margin-bottom: 30px;
+  }
+  #main-content #top-question > div p:nth-of-type(4) {
+    margin-bottom: 25px;
+  }
+  #main-content #top-question > div p:nth-of-type(5) {
+    margin-bottom: 29.5px;
+  }
+}
+
 #main-content #isara-info_1 {
   position: relative;
   text-align: center;
@@ -580,6 +756,10 @@ header > div #header-bt p {
   margin-bottom: 30px;
 }
 
+#main-content #isara-info_1 > div > p br {
+  display: none;
+}
+
 #main-content #isara-info_1 > div > div {
   max-width: 1155px;
   height: 250px;
@@ -592,6 +772,10 @@ header > div #header-bt p {
   font-size: 120%;
   margin: 31px 0 23px 0;
   letter-spacing: .12em;
+}
+
+#main-content #isara-info_1 > div > div > p br {
+  display: none;
 }
 
 #main-content #isara-info_1 > div > div > div span {
@@ -703,12 +887,109 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 768px) {
+  #main-content #isara-info_1 {
+    padding-top: 58px;
+    height: auto;
+    padding-bottom: 68px;
+  }
+  #main-content #isara-info_1 > div {
+    padding: 0 19px;
+  }
+  #main-content #isara-info_1 > div #about {
+    line-height: 55px;
+    font-size: 78%;
+    letter-spacing: .08em;
+    top: -30px;
+    width: 60px;
+    height: 60px;
+  }
+  #main-content #isara-info_1 > div h1 {
+    height: 128px;
+    padding: 29px 0;
+    margin-bottom: 0;
+  }
+  #main-content #isara-info_1 > div h1::before, #main-content #isara-info_1 > div h1::after {
+    width: 26px;
+    height: 25px;
+  }
+  #main-content #isara-info_1 > div > p {
+    margin-top: 14px;
+  }
+  #main-content #isara-info_1 > div > p br {
+    display: inline-block;
+  }
+  #main-content #isara-info_1 > div > div {
+    height: auto;
+    padding-bottom: 24px;
+    padding: 0 10px 14px 10px;
+  }
+  #main-content #isara-info_1 > div > div p {
+    line-height: 25px;
+    letter-spacing: .085em;
+    margin: 8.7px 0 14px 0;
+  }
+  #main-content #isara-info_1 > div > div p br {
+    display: inline-block;
+  }
+  #main-content #isara-info_1 > div > div > div span {
+    margin-bottom: 10px;
+  }
+  #main-content #isara-info_1 > div > div > div span:not(:last-of-type) {
+    margin-right: 16px;
+  }
+  #main-content #isara-info_1 > div > div > div span p {
+    font-size: 65%;
+    line-height: 16px;
+  }
+  #main-content #isara-info_1 > div > div > div span:nth-of-type(1) {
+    padding-top: 1px;
+  }
+  #main-content #isara-info_1 > div > div > div span:nth-of-type(1) img {
+    width: 31px;
+  }
+  #main-content #isara-info_1 > div > div > div span:nth-of-type(2) img {
+    width: 32px;
+  }
+  #main-content #isara-info_1 > div > div > div span:nth-of-type(2) p {
+    margin-top: 2px;
+  }
+  #main-content #isara-info_1 > div > div > div span:nth-of-type(3) {
+    padding-top: 2px;
+  }
+  #main-content #isara-info_1 > div > div > div span:nth-of-type(3) img {
+    width: 23px;
+  }
+  #main-content #isara-info_1 > div > div > div span:nth-of-type(3) p {
+    margin-top: 2px;
+  }
+  #main-content #isara-info_1 > div > div > div span:nth-of-type(4) {
+    padding-top: 2px;
+  }
+  #main-content #isara-info_1 > div > div > div span:nth-of-type(4) img {
+    width: 30px;
+  }
+  #main-content #isara-info_1 > div > div > div span:nth-of-type(4) p {
+    margin-top: 2px;
+  }
+  #main-content #isara-info_1 > div > div > div span:nth-of-type(5) {
+    padding-top: 1px;
+  }
+  #main-content #isara-info_1 > div > div > div span:nth-of-type(5) img {
+    width: 74px;
+  }
+}
+
 #main-content #isara-info_2 {
   height: 436px;
   background: url(../img/aboutsecondbg.jpg) no-repeat center center/auto 100%;
   color: white;
   text-align: center;
   padding-top: 58px;
+}
+
+#main-content #isara-info_2 > div h1 br, #main-content #isara-info_2 > div > p br {
+  display: none;
 }
 
 #main-content #isara-info_2 > div h1 {
@@ -718,9 +999,14 @@ header > div #header-bt p {
 }
 
 #main-content #isara-info_2 > div > p {
-  margin: 12px 0 24px 0;
+  margin: 12.5px 0 0 0;
   line-height: 42px;
-  font-size: 133%;
+  font-size: 130%;
+  letter-spacing: .023em;
+}
+
+#main-content #isara-info_2 > div > p:last-of-type {
+  margin: 0 0 24px 0;
 }
 
 #main-content #isara-info_2 > div > p span {
@@ -793,7 +1079,7 @@ header > div #header-bt p {
     font-size: 155%;
   }
   #main-content #isara-info_2 > div > p {
-    margin: 11px 0 24px 0;
+    margin: 11px 0 1px 0;
     font-size: 105%;
     line-height: 35px;
     letter-spacing: .03em;
@@ -843,6 +1129,45 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 768px) {
+  #main-content #isara-info_2 {
+    padding-top: 49px;
+    padding-bottom: 50px;
+    background: url(../img/aboutsecondbgsp.jpg) no-repeat center center/100% auto;
+  }
+  #main-content #isara-info_2 > div h1 br, #main-content #isara-info_2 > div > p br {
+    display: inline-block;
+  }
+  #main-content #isara-info_2 > div h1 {
+    font-size: 150%;
+    line-height: 30px;
+    letter-spacing: .04em;
+  }
+  #main-content #isara-info_2 > div > p {
+    font-size: 77%;
+  }
+  #main-content #isara-info_2 > div > p:last-of-type {
+    margin-top: 2px;
+    line-height: 21px;
+    margin-bottom: 29px;
+  }
+  #main-content #isara-info_2 > div > div {
+    width: 35.8%;
+  }
+  #main-content #isara-info_2 > div > div > div {
+    padding: 3.5px 49px 15px 49px;
+  }
+  #main-content #isara-info_2 > div > div > div p:first-of-type {
+    margin-top: 15px;
+  }
+  #main-content #isara-info_2 > div > div > div p:last-of-type {
+    margin-top: 7px;
+  }
+  #main-content #isara-info_2 > div > div > div:nth-of-type(2) {
+    padding-bottom: 15px;
+  }
+}
+
 #main-content #isara-info_2-bottom {
   background: #016EA9;
   text-align: center;
@@ -861,6 +1186,10 @@ header > div #header-bt p {
   color: #EBB94D;
 }
 
+#main-content #isara-info_2-bottom p br {
+  display: none;
+}
+
 @media (max-width: 1190px) {
   #main-content #isara-info_2-bottom {
     padding: 39px 0 40px 0;
@@ -874,6 +1203,19 @@ header > div #header-bt p {
 @media (max-width: 991px) {
   #main-content #isara-info_2-bottom {
     padding-top: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  #main-content #isara-info_2-bottom {
+    padding: 20px 0;
+  }
+  #main-content #isara-info_2-bottom p {
+    font-size: 75%;
+    line-height: 18px;
+  }
+  #main-content #isara-info_2-bottom p br {
+    display: inline-block;
   }
 }
 
@@ -902,6 +1244,10 @@ header > div #header-bt p {
   margin-top: 39px;
   margin-bottom: 40px;
   font-weight: normal;
+}
+
+#main-content #isara-info_3 > div p:first-of-type br {
+  display: none;
 }
 
 #main-content #isara-info_3 > div > div {
@@ -973,6 +1319,29 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 768px) {
+  #main-content #isara-info_3 {
+    padding-top: 25px;
+    height: 397px;
+  }
+  #main-content #isara-info_3 > div > p:first-of-type {
+    line-height: 24.8px;
+    margin-bottom: -1px;
+  }
+  #main-content #isara-info_3 > div > p:first-of-type br {
+    display: inline-block;
+  }
+  #main-content #isara-info_3 > div > div {
+    max-width: 599px;
+  }
+  #main-content #isara-info_3 > div > div > div:not(:last-of-type) {
+    margin-right: 43px;
+  }
+  #main-content #isara-info_3 > div > p:last-of-type {
+    margin-top: 2px;
+  }
+}
+
 #main-content #isara-info_4 {
   height: 1011px;
   background: #FEF5E0;
@@ -993,6 +1362,10 @@ header > div #header-bt p {
 #main-content #isara-info_4 > div h1 p {
   line-height: 40px;
   margin: 0;
+}
+
+#main-content #isara-info_4 > div h1 p br {
+  display: none;
 }
 
 #main-content #isara-info_4 > div h1 p:first-of-type {
@@ -1085,6 +1458,10 @@ header > div #header-bt p {
   margin: 0 0 12px 0;
 }
 
+#main-content #isara-info_4 > div #info_4-sap p:first-of-type br {
+  display: none;
+}
+
 #main-content #isara-info_4 > div #info_4-sap p:last-of-type {
   margin: 0;
   font-size: 100%;
@@ -1098,6 +1475,10 @@ header > div #header-bt p {
   line-height: 22px;
   margin: 40px 0 0 0;
   font-weight: normal;
+}
+
+#main-content #isara-info_4 > div > p br:first-of-type {
+  display: none;
 }
 
 @media (max-width: 1190px) {
@@ -1204,6 +1585,86 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 768px) {
+  #main-content #isara-info_4 {
+    height: 1169px;
+  }
+  #main-content #isara-info_4 > div {
+    padding: 0 65px;
+  }
+  #main-content #isara-info_4 > div h1 {
+    height: 122px;
+    padding: 24px 0 0 0;
+    margin-bottom: 20px;
+  }
+  #main-content #isara-info_4 > div h1 > p br {
+    display: inline-block;
+  }
+  #main-content #isara-info_4 > div h1 > p:first-of-type {
+    font-size: 53%;
+    letter-spacing: .12em;
+    line-height: 22px;
+    margin-bottom: 5px;
+  }
+  #main-content #isara-info_4 > div h1::before, #main-content #isara-info_4 > div h1::after {
+    width: 26px;
+    height: 25px;
+  }
+  #main-content #isara-info_4 > div #info_4-imgs {
+    max-width: 592px;
+  }
+  #main-content #isara-info_4 > div #info_4-imgs > div:not(:last-of-type) {
+    margin-bottom: 26px;
+  }
+  #main-content #isara-info_4 > div #info_4-imgs > div > div {
+    height: 118px;
+  }
+  #main-content #isara-info_4 > div #info_4-imgs > div h2 {
+    margin-top: 10px;
+  }
+  #main-content #isara-info_4 > div #info_4-imgs > div p {
+    margin-top: 8px;
+    letter-spacing: .091em;
+  }
+  #main-content #isara-info_4 > div #info_4-sap {
+    max-width: 613px;
+    margin-top: 41px;
+    height: 187px;
+  }
+  #main-content #isara-info_4 > div #info_4-sap h2 {
+    margin: 10px 0 13px 0;
+  }
+  #main-content #isara-info_4 > div #info_4-sap p:first-of-type {
+    margin-bottom: 10px;
+  }
+  #main-content #isara-info_4 > div #info_4-sap p:first-of-type br {
+    display: inline-block;
+  }
+  #main-content #isara-info_4 > div #info_4-sap p:last-of-type {
+    font-size: 60%;
+    padding: 0 10px;
+    line-height: 16px;
+    letter-spacing: .01em;
+  }
+  #main-content #isara-info_4 > div #info_4-sap p:last-of-type br:nth-of-type(2) {
+    display: none;
+  }
+  #main-content #isara-info_4 > div > p {
+    margin-top: 14px;
+    font-size: 73%;
+    letter-spacing: .0002em;
+    width: 103%;
+    -webkit-transform: translate(-9px);
+            transform: translate(-9px);
+  }
+  #main-content #isara-info_4 > div > p br:first-of-type {
+    display: inline-block;
+  }
+  #main-content #isara-info_4 > div > p br:last-of-type {
+    display: none;
+  }
+}
+
 #main-content #menber {
   height: 1370px;
   background: url(../img/teacherbg.jpg) no-repeat center center/auto 100%;
@@ -1226,6 +1687,10 @@ header > div #header-bt p {
 #main-content #menber > p {
   font-size: 108%;
   margin: 28px  0 0 0;
+}
+
+#main-content #menber > p br {
+  display: none;
 }
 
 #main-content #menber table {
@@ -1381,11 +1846,54 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 768px) {
+  #main-content #menber {
+    padding-top: 77px;
+    height: 1587px;
+    background-size: auto 137%;
+    background-position: 45% 26%;
+  }
+  #main-content #menber > p {
+    margin-top: 30.5px;
+  }
+  #main-content #menber > p br {
+    display: inline-block;
+  }
+  #main-content #menber table {
+    max-width: 634px;
+  }
+  #main-content #menber table tr:first-of-type td:last-of-type .menber-text,
+  #main-content #menber table tr:last-of-type td .menber-text {
+    margin-top: 117.5px;
+  }
+  #main-content #menber table tr:last-of-type td .menber-img {
+    top: -83px;
+  }
+  #main-content #menber table tr td #menber-text1 h3 {
+    margin-bottom: 10.5px;
+  }
+  #main-content #menber table tr td .menber-img {
+    top: -84px;
+    width: 120px;
+    height: 120px;
+  }
+  #main-content #menber table tr td .menber-text {
+    margin-top: 83px;
+    padding: 40px 10px 0 10px;
+    padding-bottom: 19px;
+  }
+  #main-content #menber table tr td .menber-text p {
+    letter-spacing: .0915em;
+    line-height: 21.5px;
+  }
+}
+
 #main-content #quesition-top {
   background: #EBB94D;
   height: 266px;
   text-align: center;
   color: white;
+  padding: 0 20px;
   padding-top: 38px;
   position: relative;
 }
@@ -1435,6 +1943,27 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 768px) {
+  #main-content #quesition-top {
+    height: 225px;
+    padding: 19px 19px 0 19px;
+  }
+  #main-content #quesition-top::after {
+    bottom: -15px;
+  }
+  #main-content #quesition-top h1 {
+    line-height: 39.5px;
+    height: 98px;
+    padding-top: 9px;
+    margin-top: 9px;
+    margin-bottom: 0;
+  }
+  #main-content #quesition-top h1::before, #main-content #quesition-top h1::after {
+    width: 26px;
+    height: 25px;
+  }
+}
+
 #main-content #answer {
   text-align: center;
   padding-top: 40px;
@@ -1464,6 +1993,10 @@ header > div #header-bt p {
 #main-content #answer > div small {
   font-size: 96%;
   font-weight: normal;
+}
+
+#main-content #answer > div small br {
+  display: none;
 }
 
 #main-content #answer > div > div {
@@ -1580,8 +2113,42 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 768px) {
+  #main-content #answer {
+    padding-top: 20px;
+    height: 970px;
+  }
+  #main-content #answer > div h2 {
+    margin-bottom: 32px;
+  }
+  #main-content #answer > div small {
+    line-height: 18px;
+    display: inline-block;
+  }
+  #main-content #answer > div small br {
+    display: inline-block;
+  }
+  #main-content #answer > div > div > div:not(:last-of-type) {
+    margin-bottom: 40.3px;
+  }
+  #main-content #answer > div > div > div .answer-img {
+    padding-bottom: calc(30.8%);
+  }
+  #main-content #answer > div > div > div .answer-text {
+    -webkit-box-flex: 2.22;
+        -ms-flex: 2.22;
+            flex: 2.22;
+    padding: 0;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  #main-content #answer > div > div > div .answer-text p, #main-content #answer > div > div > div .answer-text a {
+    padding-left: 14px;
+  }
+}
+
 #main-content #study {
-  background: url(../img/classbg.jpg) no-repeat center center/100% auto;
+  background: url(../img/classbg.jpg) no-repeat center center/auto 114%;
   color: white;
   height: 793px;
   text-align: center;
@@ -1654,6 +2221,7 @@ header > div #header-bt p {
   #main-content #study {
     padding-top: 60px;
     height: 765px;
+    background-size: auto 109%;
   }
   #main-content #study > div h1 {
     font-size: 153%;
@@ -1710,6 +2278,21 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 768px) {
+  #main-content #study {
+    padding-top: 40px;
+    height: 1034px;
+    background: url(../img/classbgsp.jpg) no-repeat center center/100% auto;
+  }
+  #main-content #study > div #study-group {
+    margin-bottom: 13px;
+    max-width: 600px;
+  }
+  #main-content #study > div #study-group #study-b dd:not(:first-of-type) {
+    height: 42px;
+  }
+}
+
 #main-content #study-bottom {
   background: #016EA9;
   height: 142px;
@@ -1741,6 +2324,13 @@ header > div #header-bt p {
   #main-content #study-bottom h1 {
     font-size: 100%;
     letter-spacing: .076em;
+  }
+}
+
+@media (max-width: 768px) {
+  #main-content #study-bottom {
+    height: 88px;
+    padding-top: 20px;
   }
 }
 
@@ -2009,6 +2599,101 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 768px) {
+  #main-content #schedule {
+    height: 455px;
+  }
+  #main-content #schedule > div h1 {
+    margin-bottom: 31px;
+  }
+  #main-content #schedule > div #schedule-icon {
+    display: none;
+  }
+  #main-content #schedule > div > div {
+    margin-top: 0;
+    max-width: 644px;
+  }
+  #main-content #schedule > div > div > div {
+    display: block;
+    position: relative;
+  }
+  #main-content #schedule > div > div > div:not(:first-of-type) {
+    margin-top: 4.7px;
+  }
+  #main-content #schedule > div > div > div .schedule-img {
+    padding: 0;
+    text-align: left;
+    padding: 10px 0 0 15px;
+    cursor: pointer;
+  }
+  #main-content #schedule > div > div > div .schedule-img::after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 130%;
+    color: #7e7e7e;
+    position: absolute;
+    right: 18px;
+    top: 20px;
+  }
+  #main-content #schedule > div > div > div .schedule-img img, #main-content #schedule > div > div > div .schedule-img h2 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  #main-content #schedule > div > div > div .schedule-img img br, #main-content #schedule > div > div > div .schedule-img h2 br {
+    display: none;
+  }
+  #main-content #schedule > div > div > div .schedule-img img {
+    width: 34px;
+  }
+  #main-content #schedule > div > div > div .schedule-img h2 {
+    font-size: 97%;
+    letter-spacing: .1em;
+    padding-left: 10px;
+  }
+  #main-content #schedule > div > div > div .schedule-text {
+    display: none;
+  }
+  #main-content #schedule > div > div #schedule-info1 {
+    height: 54px;
+    text-align: left;
+  }
+  #main-content #schedule > div > div #schedule-info2 {
+    height: 54px;
+    text-align: left;
+  }
+  #main-content #schedule > div > div #schedule-info2 .schedule-img {
+    padding: 12px 0 0 15px;
+  }
+  #main-content #schedule > div > div #schedule-info3 {
+    height: 54px;
+    text-align: left;
+  }
+  #main-content #schedule > div > div #schedule-info4 {
+    height: 54px;
+    text-align: left;
+  }
+  #main-content #schedule > div > div #schedule-info4 .schedule-img {
+    padding-top: 6px;
+  }
+  #main-content #schedule > div > div #schedule-info5 {
+    height: 54px;
+    text-align: left;
+  }
+  #main-content #schedule > div > div #schedule-info5 .schedule-img {
+    padding: 10px 0 0 15px;
+  }
+  #main-content #schedule > div > div #schedule-info5 .schedule-img h2 {
+    margin: 0;
+  }
+  #main-content #schedule > div > div > span {
+    display: none;
+  }
+}
+
 #main-content #why-bangkok {
   color: white;
   height: 492px;
@@ -2120,6 +2805,24 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 768px) {
+  #main-content #why-bangkok > div h1 {
+    letter-spacing: .13em;
+    text-align: center;
+    -webkit-transform: translateX(-29px);
+            transform: translateX(-29px);
+  }
+  #main-content #why-bangkok > div p {
+    margin-top: 22px;
+  }
+  #main-content #why-bangkok > div ul li {
+    letter-spacing: .11em;
+  }
+  #main-content #why-bangkok > div h2 {
+    letter-spacing: .07em;
+  }
+}
+
 #main-content #benefit {
   background: #F7C23C;
   height: 695px;
@@ -2147,6 +2850,10 @@ header > div #header-bt p {
   font-size: 100%;
   margin: 39px 0 138px 0;
   letter-spacing: 0.08em;
+}
+
+#main-content #benefit > div > p br, #main-content #benefit > div > span br {
+  display: none;
 }
 
 #main-content #benefit > div span {
@@ -2210,6 +2917,10 @@ header > div #header-bt p {
   margin: 10.5px 0 0 0;
   letter-spacing: .12em;
   line-height: 22px;
+}
+
+#main-content #benefit > div > div > div .b-mobile-text {
+  display: none;
 }
 
 #main-content #benefit > div > div #benefit-2 {
@@ -2278,6 +2989,69 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 768px) {
+  #main-content #benefit {
+    padding-top: 40.5px;
+    padding-bottom: 39px;
+  }
+  #main-content #benefit > div h1 {
+    margin: 0;
+  }
+  #main-content #benefit > div > p, #main-content #benefit > div > span {
+    margin: 22px 0 95px 0;
+  }
+  #main-content #benefit > div > p br, #main-content #benefit > div > span br {
+    display: inline-block;
+  }
+  #main-content #benefit > div > div {
+    max-width: 644px;
+    padding-top: 42px;
+    padding-bottom: 45px;
+  }
+  #main-content #benefit > div > div h1 {
+    top: -12px;
+    width: 61%;
+    padding: 0 50px;
+  }
+  #main-content #benefit > div > div > div {
+    background: transparent;
+    width: 100%;
+    height: 79px;
+    padding: 0;
+    text-align: left;
+  }
+  #main-content #benefit > div > div > div h2 {
+    width: 80px;
+    height: 80px;
+    padding: 26px 0 0 10px;
+    display: inline-block;
+    font-size: 123%;
+    font-weight: bold;
+    background: white;
+    border-radius: 50%;
+    margin: 0 0 0 0;
+    vertical-align: top;
+  }
+  #main-content #benefit > div > div > div p:first-of-type {
+    display: none;
+  }
+  #main-content #benefit > div > div > div .b-mobile-text {
+    color: white;
+    width: 80%;
+    display: inline-block;
+    padding: 15px 0 0 42px;
+  }
+  #main-content #benefit > div > div #benefit-1, #main-content #benefit > div > div #benefit-2, #main-content #benefit > div > div #benefit-3 {
+    margin: 0 auto 0 36px;
+  }
+  #main-content #benefit > div > div #benefit-1, #main-content #benefit > div > div #benefit-2 {
+    margin-bottom: 14px;
+  }
+  #main-content #benefit > div > div #benefit-3 {
+    padding: 0;
+  }
+}
+
 #main-content #no-volunteer {
   background: url(../img/specialdetail.jpg) no-repeat center center/auto 102%;
   height: 520px;
@@ -2295,10 +3069,26 @@ header > div #header-bt p {
   margin: 0 0 20px 0;
 }
 
+#main-content #no-volunteer > div h2 br {
+  display: none;
+}
+
 #main-content #no-volunteer > div p {
   font-size: 133%;
   margin: 0 0 20px 0;
   line-height: 31.5px;
+}
+
+#main-content #no-volunteer > div p:first-of-type br:first-of-type {
+  display: none;
+}
+
+#main-content #no-volunteer > div p:last-of-type br:nth-of-type(2) {
+  display: none;
+}
+
+#main-content #no-volunteer > div p:last-of-type br:nth-of-type(4) {
+  display: none;
 }
 
 #main-content #no-volunteer > div h1 {
@@ -2306,6 +3096,10 @@ header > div #header-bt p {
   max-width: 850px;
   height: 70px;
   line-height: 70px;
+}
+
+#main-content #no-volunteer > div h1 br {
+  display: none;
 }
 
 #main-content #no-volunteer > div h1::before, #main-content #no-volunteer > div h1::after {
@@ -2343,6 +3137,50 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 768px) {
+  #main-content #no-volunteer {
+    background: url(../img/specialdetailsp.jpg) no-repeat center center/100% auto;
+    height: 586px;
+    padding-top: 60px;
+  }
+  #main-content #no-volunteer > div h2 {
+    margin-bottom: 20.2px;
+  }
+  #main-content #no-volunteer > div h2 br {
+    display: inline-block;
+  }
+  #main-content #no-volunteer > div p {
+    font-size: 95%;
+    line-height: 25px;
+    letter-spacing: .09em;
+  }
+  #main-content #no-volunteer > div p:first-of-type br:first-of-type {
+    display: inline-block;
+  }
+  #main-content #no-volunteer > div p:first-of-type br:nth-of-type(2) {
+    display: none;
+  }
+  #main-content #no-volunteer > div p:last-of-type br:nth-of-type(2) {
+    display: inline-block;
+  }
+  #main-content #no-volunteer > div p:last-of-type br:nth-of-type(4) {
+    display: inline-block;
+  }
+  #main-content #no-volunteer > div h1 {
+    height: 99px;
+    max-width: 640px;
+    padding-top: 11px;
+    line-height: 39px;
+  }
+  #main-content #no-volunteer > div h1 br {
+    display: inline-block;
+  }
+  #main-content #no-volunteer > div h1::before, #main-content #no-volunteer > div h1::after {
+    width: 26px;
+    height: 25px;
+  }
+}
+
 #main-content #message {
   text-align: center;
   padding-top: 58px;
@@ -2361,6 +3199,10 @@ header > div #header-bt p {
 #main-content #message > div h2 {
   font-size: 133%;
   margin: 0 0 40px 0;
+}
+
+#main-content #message > div h2 br {
+  display: none;
 }
 
 #main-content #message > div > div {
@@ -2466,7 +3308,39 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 768px) {
+  #main-content #message {
+    padding-top: 40px;
+    padding-bottom: 63px;
+  }
+  #main-content #message > div h2 {
+    margin-bottom: 30px;
+  }
+  #main-content #message > div h2 br {
+    display: inline-block;
+  }
+  #main-content #message > div > div {
+    max-width: 674px;
+  }
+  #main-content #message > div > div #message-text {
+    padding-top: 38px;
+  }
+  #main-content #message > div > div #message-text p {
+    letter-spacing: .068em;
+  }
+  #main-content #message > div > div #message-text p:nth-of-type(2) {
+    margin-bottom: 29.7px;
+  }
+  #main-content #message > div > div #message-text p:nth-of-type(3) {
+    margin-bottom: 30px;
+  }
+  #main-content #message > div > div #message-text p:last-of-type {
+    margin-top: 7px;
+  }
+}
+
 #main-content #contact {
+  padding: 0 20px;
   padding-top: 57px;
   background: #EBB94D;
   height: 695px;
@@ -2522,7 +3396,7 @@ header > div #header-bt p {
   height: 53px;
   line-height: 52px;
   border-radius: 40px;
-  background: red;
+  background: #DA6B64;
   color: white;
   font-size: 145%;
   border: none;
@@ -2571,6 +3445,21 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 768px) {
+  #main-content #contact {
+    height: 686px;
+  }
+  #main-content #contact > div form {
+    max-width: 526px;
+  }
+  #main-content #contact > div form input[type="text"] {
+    height: 53px;
+  }
+  #main-content #contact > div form input[type="text"]:last-of-type {
+    margin-bottom: 47px;
+  }
+}
+
 #main-content #question {
   height: 1215px;
   padding-top: 58px;
@@ -2585,6 +3474,10 @@ header > div #header-bt p {
 #main-content #question h1 i {
   font-size: 100%;
   vertical-align: 2px;
+}
+
+#main-content #question > div {
+  padding: 0 60px;
 }
 
 #main-content #question > div ul {
@@ -2678,6 +3571,33 @@ header > div #header-bt p {
   }
 }
 
+@media (max-width: 768px) {
+  #main-content #question {
+    height: 831px;
+  }
+  #main-content #question > div {
+    padding: 0 20px;
+  }
+  #main-content #question > div h1 {
+    margin-bottom: 20px;
+  }
+  #main-content #question > div ul {
+    max-width: 673px;
+  }
+  #main-content #question > div ul li {
+    height: 39.5px;
+    padding: 6px 10px 10px 10px;
+  }
+  #main-content #question > div ul li:not(:first-of-type) {
+    margin-top: 4.5px;
+  }
+  #main-content #question > div ul li p {
+    line-height: 26px;
+    height: 25px;
+    letter-spacing: .06em;
+  }
+}
+
 footer {
   background: #ECECEC;
   height: 176px;
@@ -2724,6 +3644,24 @@ footer .sns {
   }
   footer .sns {
     margin: 13px auto 31px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding-top: 20.5px;
+    padding-right: 15px;
+  }
+  footer > p {
+    letter-spacing: .17em;
+  }
+  footer > small {
+    letter-spacing: .165em;
+  }
+  footer .sns {
+    margin-top: 12px;
+    -webkit-transform: translateX(-1px);
+            transform: translateX(-1px);
   }
 }
 /*# sourceMappingURL=style.css.map */
