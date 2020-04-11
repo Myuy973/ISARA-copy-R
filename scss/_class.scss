@@ -58,6 +58,7 @@ div.sns {
             width: 75px;
             padding-right: 2px;
             letter-spacing: -.04em;
+            &:hover { background: #0C7ABF;}
         }
         &:nth-of-type(2) {
             background: blue;
