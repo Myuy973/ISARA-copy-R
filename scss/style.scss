@@ -96,6 +96,7 @@ header {
                 letter-spacing: 0.1em;
                 margin: 0;
             }
+            &:hover { background: #D84940}
             @include pc-small() {
                 width: 258px;
                 height: 40px;
@@ -126,6 +127,9 @@ header {
                 font-weight: normal;
                 position: relative;
                 top: -18px;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
 
         }
@@ -412,7 +416,8 @@ header {
         }
 
         @include mobile-main() {
-            height: 500px;
+            height: auto;
+            padding-bottom: 23px;
             > div {
                 max-width: 95%;
                 h2 {
@@ -420,9 +425,14 @@ header {
                     margin-bottom: 10px;
                 }
                 > span {
-                    width: 403px;
-                    height: 20px;
+                    width: auto;
+                    height: auto;
+                    background: none;
                     p {
+                        background: white;
+                        border-radius: 5px;
+                        padding: 0 4px;
+                        display: inline;
                         letter-spacing: .155em;
                         line-height: 22px;
                     }
@@ -2020,7 +2030,8 @@ header {
         }
 
         @include tabled() {
-            height: 1213px;
+            height: auto;
+            padding-bottom: 59px;
             > div {
                 padding: 0 20px;
                 > div {
@@ -2459,6 +2470,7 @@ header {
                     max-width: 1055px;
                     margin-top: 26px;
                     .schedule-text {
+                        display: block;
                         h2, h3 {
                             letter-spacing: .0615em;
                             font-size: 90%;
@@ -2619,10 +2631,11 @@ header {
                             text-align: left;
                             padding: 10px 0 0 15px;
                             cursor: pointer;
-                            &::after {
-                                content: "\f107";
-                                font-family: "Font Awesome 5 Free";
-                                font-weight: 900;
+                            h2:hover {
+                                text-decoration: underline;
+                            }
+                            .i_rotate { transform: rotate(180deg);}    
+                            i {
                                 font-size: 130%;
                                 color: #7e7e7e;
                                 position: absolute;
@@ -2647,38 +2660,72 @@ header {
                         }
                         .schedule-text {
                             display: none;
+                            height: auto;
+                            h2, h3 {
+                                font-size: 70%;
+                                margin-bottom: 15px;
+                                letter-spacing: .25em;
+                            }
+                            p {
+                                letter-spacing: .07em;
+                            }
                         }
                     }
                     #schedule-info1 {
-                        height: 54px;
-                        text-align: left;
-                    }
-                    #schedule-info2 {
-                        height: 54px;
+                        height: auto;
                         text-align: left;
                         .schedule-img {
-                            padding: 12px 0 0 15px;
+                            height: 54px;
+                        }
+                        .schedule-text {
+                            padding: 25px 10px 20px 15px;
                         }
                     }
-                    #schedule-info3 {
-                        height: 54px;
-                        text-align: left;
-                    }
-                    #schedule-info4 {
-                        height: 54px;
+                    #schedule-info2 {
+                        height: auto;
                         text-align: left;
                         .schedule-img {
+                            height: 54px;
+                            padding: 12px 0 0 15px;
+                        }
+                        .schedule-text {
+                            padding: 25px 10px 20px 15px;
+                        }
+
+                    }
+                    #schedule-info3 {
+                        height: auto;
+                        text-align: left;
+                        .schedule-img {
+                            height: 54px;
+                        }
+                        .schedule-text {
+                            padding: 25px 10px 20px 15px;
+                        }
+                    }
+                    #schedule-info4 {
+                        height: auto;
+                        text-align: left;
+                        .schedule-img {
+                            height: 54px;
                             padding-top: 6px;
+                        }
+                        .schedule-text {
+                            padding: 25px 10px 20px 15px;
                         }
                     }
                     #schedule-info5 {
-                        height: 54px;
+                        height: auto;
                         text-align: left;
                         .schedule-img {
+                            height: 54px;
                             padding: 10px 0 0 15px;
                             h2 {
                                 margin: 0;
                             }
+                        }
+                        .schedule-text {
+                            padding: 25px 10px 20px 15px;
                         }
                     }
                     > span {
@@ -3598,11 +3645,18 @@ header {
                     width: 100%;
                     height: 63px;
                     line-height: 41px;
-                    border-radius: 2px;
+                    border-radius: 2px 2px 0 0;
                     padding: 10px 20px 10px 20px;
                     border: 1px solid $border-color;
                     list-style-type: none;
+                    .change-after {
+                        &::after {
+                            top: 0;
+                            transform: rotate(180deg);
+                        }
+                    }
                     p {
+                        position: relative;
                         display: block;
                         margin: 0 auto;
                         width: 100%;
@@ -3611,12 +3665,17 @@ header {
                         // background: red;
                         cursor: pointer;
                         padding-right: 1px;
+                        &:hover {
+                            text-decoration: underline;
+                        }
                         &::before {
                             content: "\f059";
                             font-family: "Font Awesome 5 Free";
                             font-weight: 400;
                             font-size: 85%;
                             color: $blue;
+                            display: inline-block;
+                            text-decoration: none;
                         }
                         &::after {
                             position: absolute;
@@ -3634,6 +3693,20 @@ header {
 
                     &:not(:first-of-type) {
                         margin-top: 5.2px;
+                    }
+                }
+                div {
+                    display: none;
+                    margin: 0;
+                    padding: 21px 35px 30px 18px;
+                    width: 99.9%;
+                    box-shadow: 0 1px 0px .3px $border-color;
+                    position: relative;
+                    top: -1px;
+                    p {
+                        margin: 0;
+                        font-size: 100%;
+                        letter-spacing: .085em;
                     }
                 }
             }
@@ -3746,7 +3819,7 @@ header {
 
 footer {
     background: #ECECEC;
-    height: 176px;
+    height: 180px;
     text-align: center;
     color: #898989;
     padding-top: 40px;
@@ -3785,6 +3858,7 @@ footer {
     @include mobile() {
         padding-top: 20.5px;
         padding-right: 15px;
+        height: 138px;
         > p {
             letter-spacing: .17em;
         }
@@ -3801,6 +3875,34 @@ footer {
         p { margin-bottom: -1px;}
         .sns {
             margin-top: 13px;
+        }
+    }
+}
+
+#return {
+    position: fixed;
+    display: none;
+    bottom: 95px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    line-height: 94px;
+text-align: center;
+    background: #ECECEC;
+    cursor: pointer;
+    i {
+        font-size: 40px;
+        color: black;
+    }
+
+    @include mobile() {
+        bottom: 15px;
+        right: 15px;
+        width: 47px;
+        height: 53px;
+        line-height: 60px;
+        i {
+            font-size: 23px;
         }
     }
 }

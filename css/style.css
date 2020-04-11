@@ -278,6 +278,10 @@ header > div #header-bt p {
   margin: 0;
 }
 
+header > div #header-bt:hover {
+  background: #D84940;
+}
+
 @media (max-width: 1190px) {
   header > div #header-bt {
     width: 258px;
@@ -315,6 +319,10 @@ header > div #header-bt-mobile p {
   font-weight: normal;
   position: relative;
   top: -18px;
+}
+
+header > div #header-bt-mobile p:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 991px) {
@@ -620,7 +628,8 @@ header > div #header-bt-mobile p {
 
 @media (max-width: 767px) {
   #main-content #top-page-bottom {
-    height: 500px;
+    height: auto;
+    padding-bottom: 23px;
   }
   #main-content #top-page-bottom > div {
     max-width: 95%;
@@ -630,10 +639,15 @@ header > div #header-bt-mobile p {
     margin-bottom: 10px;
   }
   #main-content #top-page-bottom > div > span {
-    width: 403px;
-    height: 20px;
+    width: auto;
+    height: auto;
+    background: none;
   }
   #main-content #top-page-bottom > div > span p {
+    background: white;
+    border-radius: 5px;
+    padding: 0 4px;
+    display: inline;
     letter-spacing: .155em;
     line-height: 22px;
   }
@@ -2371,7 +2385,8 @@ header > div #header-bt-mobile p {
 
 @media (max-width: 991px) {
   #main-content #answer {
-    height: 1213px;
+    height: auto;
+    padding-bottom: 59px;
   }
   #main-content #answer > div {
     padding: 0 20px;
@@ -2852,6 +2867,9 @@ header > div #header-bt-mobile p {
     max-width: 1055px;
     margin-top: 26px;
   }
+  #main-content #schedule > div > div .schedule-text {
+    display: block;
+  }
   #main-content #schedule > div > div .schedule-text h2, #main-content #schedule > div > div .schedule-text h3 {
     letter-spacing: .0615em;
     font-size: 90%;
@@ -3004,10 +3022,14 @@ header > div #header-bt-mobile p {
     padding: 10px 0 0 15px;
     cursor: pointer;
   }
-  #main-content #schedule > div > div > div .schedule-img::after {
-    content: "\f107";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
+  #main-content #schedule > div > div > div .schedule-img h2:hover {
+    text-decoration: underline;
+  }
+  #main-content #schedule > div > div > div .schedule-img .i_rotate {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  #main-content #schedule > div > div > div .schedule-img i {
     font-size: 130%;
     color: #7e7e7e;
     position: absolute;
@@ -3034,38 +3056,71 @@ header > div #header-bt-mobile p {
   }
   #main-content #schedule > div > div > div .schedule-text {
     display: none;
+    height: auto;
+  }
+  #main-content #schedule > div > div > div .schedule-text h2, #main-content #schedule > div > div > div .schedule-text h3 {
+    font-size: 70%;
+    margin-bottom: 15px;
+    letter-spacing: .25em;
+  }
+  #main-content #schedule > div > div > div .schedule-text p {
+    letter-spacing: .07em;
   }
   #main-content #schedule > div > div #schedule-info1 {
-    height: 54px;
+    height: auto;
     text-align: left;
   }
-  #main-content #schedule > div > div #schedule-info2 {
+  #main-content #schedule > div > div #schedule-info1 .schedule-img {
     height: 54px;
+  }
+  #main-content #schedule > div > div #schedule-info1 .schedule-text {
+    padding: 25px 10px 20px 15px;
+  }
+  #main-content #schedule > div > div #schedule-info2 {
+    height: auto;
     text-align: left;
   }
   #main-content #schedule > div > div #schedule-info2 .schedule-img {
+    height: 54px;
     padding: 12px 0 0 15px;
   }
+  #main-content #schedule > div > div #schedule-info2 .schedule-text {
+    padding: 25px 10px 20px 15px;
+  }
   #main-content #schedule > div > div #schedule-info3 {
-    height: 54px;
+    height: auto;
     text-align: left;
   }
-  #main-content #schedule > div > div #schedule-info4 {
+  #main-content #schedule > div > div #schedule-info3 .schedule-img {
     height: 54px;
+  }
+  #main-content #schedule > div > div #schedule-info3 .schedule-text {
+    padding: 25px 10px 20px 15px;
+  }
+  #main-content #schedule > div > div #schedule-info4 {
+    height: auto;
     text-align: left;
   }
   #main-content #schedule > div > div #schedule-info4 .schedule-img {
+    height: 54px;
     padding-top: 6px;
   }
+  #main-content #schedule > div > div #schedule-info4 .schedule-text {
+    padding: 25px 10px 20px 15px;
+  }
   #main-content #schedule > div > div #schedule-info5 {
-    height: 54px;
+    height: auto;
     text-align: left;
   }
   #main-content #schedule > div > div #schedule-info5 .schedule-img {
+    height: 54px;
     padding: 10px 0 0 15px;
   }
   #main-content #schedule > div > div #schedule-info5 .schedule-img h2 {
     margin: 0;
+  }
+  #main-content #schedule > div > div #schedule-info5 .schedule-text {
+    padding: 25px 10px 20px 15px;
   }
   #main-content #schedule > div > div > span {
     display: none;
@@ -4075,13 +4130,20 @@ header > div #header-bt-mobile p {
   width: 100%;
   height: 63px;
   line-height: 41px;
-  border-radius: 2px;
+  border-radius: 2px 2px 0 0;
   padding: 10px 20px 10px 20px;
   border: 1px solid #E5E5E5;
   list-style-type: none;
 }
 
+#main-content #question > div ul li .change-after::after {
+  top: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 #main-content #question > div ul li p {
+  position: relative;
   display: block;
   margin: 0 auto;
   width: 100%;
@@ -4091,12 +4153,18 @@ header > div #header-bt-mobile p {
   padding-right: 1px;
 }
 
+#main-content #question > div ul li p:hover {
+  text-decoration: underline;
+}
+
 #main-content #question > div ul li p::before {
   content: "\f059";
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
   font-size: 85%;
   color: #016EA9;
+  display: inline-block;
+  text-decoration: none;
 }
 
 #main-content #question > div ul li p::after {
@@ -4114,6 +4182,23 @@ header > div #header-bt-mobile p {
 
 #main-content #question > div ul li:not(:first-of-type) {
   margin-top: 5.2px;
+}
+
+#main-content #question > div ul div {
+  display: none;
+  margin: 0;
+  padding: 21px 35px 30px 18px;
+  width: 99.9%;
+  -webkit-box-shadow: 0 1px 0px 0.3px #E5E5E5;
+          box-shadow: 0 1px 0px 0.3px #E5E5E5;
+  position: relative;
+  top: -1px;
+}
+
+#main-content #question > div ul div p {
+  margin: 0;
+  font-size: 100%;
+  letter-spacing: .085em;
 }
 
 @media (max-width: 1190px) {
@@ -4223,7 +4308,7 @@ header > div #header-bt-mobile p {
 
 footer {
   background: #ECECEC;
-  height: 176px;
+  height: 180px;
   text-align: center;
   color: #898989;
   padding-top: 40px;
@@ -4274,6 +4359,7 @@ footer .sns {
   footer {
     padding-top: 20.5px;
     padding-right: 15px;
+    height: 138px;
   }
   footer > p {
     letter-spacing: .17em;
@@ -4294,6 +4380,37 @@ footer .sns {
   }
   footer .sns {
     margin-top: 13px;
+  }
+}
+
+#return {
+  position: fixed;
+  display: none;
+  bottom: 95px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  line-height: 94px;
+  text-align: center;
+  background: #ECECEC;
+  cursor: pointer;
+}
+
+#return i {
+  font-size: 40px;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  #return {
+    bottom: 15px;
+    right: 15px;
+    width: 47px;
+    height: 53px;
+    line-height: 60px;
+  }
+  #return i {
+    font-size: 23px;
   }
 }
 /*# sourceMappingURL=style.css.map */
