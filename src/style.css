@@ -9,6 +9,7 @@
   margin: 0 auto 38px auto;
 }
 
+
 .title-deco_1::before, #main-content #top-question > div h1::before, #main-content #isara-info_1 > div h1::before, #main-content #isara-info_4 > div h1::before, #main-content #quesition-top h1::before, #main-content #no-volunteer > div h1::before {
   content: "";
   display: inline-block;
