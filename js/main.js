@@ -19,6 +19,7 @@ $(function () {
     })
     $('.schedule-text').first().css('display', "block");
 
+    
 
     change_return();
     $("#return").on("click", function() {
