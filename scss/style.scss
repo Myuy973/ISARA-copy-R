@@ -2382,6 +2382,9 @@ header {
                     display: flex;
                     background: $cream;
                     border-radius: 5px;
+                    .schedule-img > i {
+                        display: none;
+                    }
                 }
                 #schedule-info1 {
                     height: 226px;
@@ -2637,6 +2640,7 @@ header {
                             }
                             .i_rotate { transform: rotate(180deg);}    
                             i {
+                                display: inline-block;
                                 font-size: 130%;
                                 color: #7e7e7e;
                                 position: absolute;

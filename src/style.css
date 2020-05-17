@@ -9,7 +9,6 @@
   margin: 0 auto 38px auto;
 }
 
-
 .title-deco_1::before, #main-content #top-question > div h1::before, #main-content #isara-info_1 > div h1::before, #main-content #isara-info_4 > div h1::before, #main-content #quesition-top h1::before, #main-content #no-volunteer > div h1::before {
   content: "";
   display: inline-block;
@@ -2711,6 +2710,10 @@ header > div #header-bt-mobile p:hover {
   border-radius: 5px;
 }
 
+#main-content #schedule > div > div > div .schedule-img > i {
+  display: none;
+}
+
 #main-content #schedule > div > div #schedule-info1 {
   height: 226px;
 }
@@ -2973,6 +2976,7 @@ header > div #header-bt-mobile p:hover {
     transform: rotate(180deg);
   }
   #main-content #schedule > div > div > div .schedule-img i {
+    display: inline-block;
     font-size: 130%;
     color: #7e7e7e;
     position: absolute;
